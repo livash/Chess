@@ -65,24 +65,19 @@ class	Player
 end
 
 class Piece
-  KING_MOVES = [
-    [-1, -1], #[[-1, -1][-2,-2], [-3,-3]]
-    [-1,  0],
-    [-1,  1],
-    [ 0, -1],
-    [ 0,  1],
-    [ 1, -1],
-    [ 1,  0],
-    [ 1,  1]
-  ]
+
+  DIAGONAL_MOVES = [[-1, -1], [-1, 1], [1, -1], [1, 1]]
+  ORTHOGONAL_MOVES = [[-1, 0], [0, -1], [0, 1], [1, 0]]
+
+  KING_MOVES = DIAGONAL_MOVES + ORTHOGONAL_MOVES
 
   QUEEN_MOVES = KING_MOVES.map do |(x, y)|
-    # x = move[0]
-    # y = move[1]
-    temp = []
-    1.upto(7) { |i| temp << [x * i, y * i] }
-    temp #.flatten(1)
+    expand_arr = []
+    1.upto(7) { |i| expand_arr << [x * i, y * i] }
+    expand_arr
   end.flatten(1)
+
+  BISHOP_MOVES = KING_MOVES.reject { |(x, y)| (x.zero? || y.zero?) }
 
   def initialize(type)
     @type = type
