@@ -1,0 +1,35 @@
+class Board
+	@pieces = []
+end
+
+class Game
+	attr_accessor :players, :board
+
+	def initialize
+
+	end
+
+	def play
+		# ask questions start new or from saved file
+
+			until game_over?
+			.....
+
+		end
+		#print out WIn loose message
+
+	end
+
+	def save
+	end
+
+end
+
+class	Player
+end
+
+class Piece
+end
+
+class King < Piece
+end
