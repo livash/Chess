@@ -1,15 +1,19 @@
 class Board
+  GAME_MAP = []
+
   attr_accessor :board, :pieces
 
   def initialize
   	@pieces = []
+    @board = []
   end
 
   def display_board
   end
 
-  def place_a_move(move_hash) #move_hash = {:x, :y, :piece}
-
+  def place_a_move(start_pos, target_pos)
+    @board[target_pos] = @board[start_pos].dup
+    @board[start_pos] = nil
   end
 end
 
@@ -22,21 +26,22 @@ class Game
 	end
 
 	def play
-		# ask questions start new or from saved file
-    #get names for the players
     player = players[0]
 		until game_over?
-      current_pos, target_pos = player.ask_move #move_array = [f4, f3]
-      # until valid_move?(move = player.ask_move)
-      game_board.place_a_move(current_pos, target_pos)
-      # end
-      player = players.next
+      start_pos, target_pos = player.ask_move #move_array = [f4, f3]
+      game_board.place_a_move(start_pos, target_pos)
+      player = next_player(player)
 		end
 		#print out win lose message
 	end
 
+  def next_player(player)
+    (player == players[0]) ? player[1] : player[0]
+  end
+
   def game_over?
-    # calculate if game is over
+    # TODO: calculate if game is over
+    false
   end
 
 	def save
@@ -52,16 +57,39 @@ class	Player
   end
 
   def ask_move
-    print "Enter your move: "
-    move = gets.chomp
-    move_hash #move_hash = {:x, :y, :piece}
+    # OPTIMIZE: add error checking
+    print "Enter your move [f2, f3]: "
+    start_pos, target_pos = gets.chomp.split(",")
+    [start_pos, target_pos]
   end
 end
 
 class Piece
+
 end
 
 class King < Piece
+  MODIFIER = []
+end
+
+class Queen < Piece
+  MODIFIER = []
+end
+
+class Bishop < Piece
+  MODIFIER = []
+end
+
+class Knight < Piece
+  MODIFIER = []
+end
+
+class Castle < Piece
+  MODIFIER = []
+end
+
+class Pawn < Piece
+  MODIFIER = []
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -70,4 +98,11 @@ if __FILE__ == $PROGRAM_NAME
   chess = Game.new
   chess.play(sean, olena)
 end
+
+
+does piece a know where it is?
+what moves a piece? a player, the piece, the board, the game?
+
+
+
 
