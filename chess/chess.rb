@@ -8,11 +8,15 @@ class Board
     @board = []
   end
 
+  def generate_pieces
+    [:black, :white].each do |color|
+  end
+
   def display_board
   end
 
   def place_a_move(start_pos, target_pos)
-    @board[target_pos] = @board[start_pos].dup
+    @board[target_pos] = @board[start_pos]
     @board[start_pos] = nil
   end
 end
@@ -28,8 +32,11 @@ class Game
 	def play
     player = players[0]
 		until game_over?
-      start_pos, target_pos = player.ask_move #move_array = [f4, f3]
-      game_board.place_a_move(start_pos, target_pos)
+      succcess = false
+      until success
+        start_pos, target_pos = player.ask_move #move_array = [f4, f3]
+        success = game_board.place_a_move(start_pos, target_pos)
+      end
       player = next_player(player)
 		end
 		#print out win lose message
@@ -65,63 +72,67 @@ class	Player
 end
 
 class Piece
-
   DIAGONAL_MOVES = [[-1, -1], [-1, 1], [1, -1], [1, 1]]
   ORTHOGONAL_MOVES = [[-1, 0], [0, -1], [0, 1], [1, 0]]
-
-  KING_MOVES = DIAGONAL_MOVES + ORTHOGONAL_MOVES
-
-  QUEEN_MOVES = KING_MOVES.map do |(x, y)|
-    expand_arr = []
-    1.upto(7) { |i| expand_arr << [x * i, y * i] }
-    expand_arr
-  end.flatten(1)
-
-  BISHOP_MOVES = KING_MOVES.reject { |(x, y)| (x.zero? || y.zero?) }
-
-  def initialize(type)
-    @type = type
-    @modifier = modifiers_for(type)
-  end
-
-  def modifiers_for(type)
-    case type
-    when :king
-      KING_MOVES
-    when :queen
-      QUEEN_MOVES
-    when :bishop
-    when :knight
-    when :castle
-    when :pawn
-    else
-      raise "Bad type"
-    end
-  end
 end
 
 class King < Piece
-  MODIFIER = []
+  def possible_moves
+    DIAGONAL_MOVES + ORTHOGONAL_MOVES
+  end
 end
 
 class Queen < Piece
-  MODIFIER = []
+  def possible_moves
+    KING_MOVES.map do |(x, y)|
+      expand_arr = []
+      1.upto(7) { |i| expand_arr << [x * i, y * i] }
+      expand_arr
+    end.flatten(1)
+  end
 end
 
 class Bishop < Piece
-  MODIFIER = []
+
+  def possible_moves
+    DIAGONAL_MOVES.map do |(x, y)|
+      expand_arr = []
+      1.upto(7) { |i| expand_arr << [x * i, y * i] }
+      expand_arr
+    end.flatten(1)
+  end
 end
 
 class Knight < Piece
-  MODIFIER = []
+  def possible_moves
+    [
+      [-2, -1],
+      [-2,  1],
+      [-1, -2],
+      [-1,  2],
+      [ 1, -2],
+      [ 1,  2],
+      [ 2, -1],
+      [ 2,  1]
+    ]
+  end
 end
 
 class Castle < Piece
-  MODIFIER = []
+  def possible_moves
+    ORTHOGONAL_MOVES.map do |(x, y)|
+      expand_arr = []
+      1.upto(7) { |i| expand_arr << [x * i, y * i] }
+      expand_arr
+    end.flatten(1)
+  end
 end
 
 class Pawn < Piece
-  MODIFIER = []
+  def possible_moves
+    # TODO: add checking
+    [0, 1]
+  end
 end
 
 if __FILE__ == $PROGRAM_NAME
