@@ -65,7 +65,44 @@ class	Player
 end
 
 class Piece
+  KING_MOVES = [
+    [-1, -1], #[[-1, -1][-2,-2], [-3,-3]]
+    [-1,  0],
+    [-1,  1],
+    [ 0, -1],
+    [ 0,  1],
+    [ 1, -1],
+    [ 1,  0],
+    [ 1,  1]
+  ]
 
+  QUEEN_MOVES = KING_MOVES.map do |(x, y)|
+    # x = move[0]
+    # y = move[1]
+    temp = []
+    1.upto(7) { |i| temp << [x * i, y * i] }
+    temp #.flatten(1)
+  end.flatten(1)
+
+  def initialize(type)
+    @type = type
+    @modifier = modifiers_for(type)
+  end
+
+  def modifiers_for(type)
+    case type
+    when :king
+      KING_MOVES
+    when :queen
+      QUEEN_MOVES
+    when :bishop
+    when :knight
+    when :castle
+    when :pawn
+    else
+      raise "Bad type"
+    end
+  end
 end
 
 class King < Piece
