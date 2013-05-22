@@ -101,25 +101,33 @@ class Board
     p "y_start: #{y_start}, x_start: #{x_start}"
     p "y_targ: #{y_targ}, x_targ: #{x_targ}"
 
-    #calc vector and its length/range
-    vector_move_x = (x_targ - x_start).to_f
-    vector_move_x = vector_move_x / (x_targ - x_start).to_f.abs unless (x_targ - x_start).zero?
+    piece = @chess_board[y_start][x_start]
+    p "piece: #{piece.face} #{piece.color}"
 
-    vector_move_y = (y_targ - y_start).to_f
-    vector_move_y = vector_move_y / (y_targ - y_start).to_f.abs unless (y_targ - y_start).zero?
+    unless piece.is_a? Knight
+      #calc vector and its length/range
+      vector_move_x = (x_targ - x_start).to_f
+      vector_move_x = vector_move_x / (x_targ - x_start).to_f.abs unless (x_targ - x_start).zero?
 
-    move_vector = [vector_move_y, vector_move_x]
-    move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+      vector_move_y = (y_targ - y_start).to_f
+      vector_move_y = vector_move_y / (y_targ - y_start).to_f.abs unless (y_targ - y_start).zero?
+
+      move_vector = [vector_move_y, vector_move_x]
+      move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+    else # if piece is a knight
+       vector_move_x = (x_targ - x_start)
+       vector_move_y = (y_targ - y_start)
+       move_vector = [vector_move_y, vector_move_x]
+       move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+    end
 
     p "vector_move_x: #{vector_move_x}, vector_move_y: #{vector_move_y}"
     p "move_vector: #{move_vector}"
     p "move_range: #{move_range}"
 
     #ask piece whether this vector is ints list
-    piece = @chess_board[y_start][x_start]
-    possible_vectors = piece.vectors
 
-    p "piece: #{piece.face} #{piece.color}"
+    possible_vectors = piece.vectors
     p "possible_vectors: #{possible_vectors}"
 
     first_check = possible_vectors.include?(move_vector)
@@ -168,6 +176,26 @@ if __FILE__ == $PROGRAM_NAME
 
   b.place_move('d8','h4')
   b.display_board
+
+  p "#knight valid move"
+  b.place_move('b8','c6')
+  b.display_board
+
+  p "#knight invalid move"
+  b.place_move('c6','a5')
+  b.display_board
+
+  p "quen takes a pawn"
+  b.place_move('h4','g4')
+  b.display_board
+
+  p "quen takes a pawn"
+  b.place_move('g4','f3')
+  b.display_board
+  # p "#knight invalid move"
+  # b.place_move('g8','c4')
+  # b.display_board
+
 
   # b.place_move([7,6],[5,5])
   # b.display_board

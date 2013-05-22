@@ -64,7 +64,7 @@ class Knight < Piece
   def initialize(color)
     super(color)
     @face = "Kn"
-    @range = 1
+    @range = 4
   end
 
   def vectors
