@@ -1,12 +1,14 @@
 #require_relative "board.rb"
 
-puts "Piece is loaded......"
-
 class Piece
   DIAGONAL_MOVES = [[-1, -1], [-1, 1], [1, -1], [1, 1]]
   ORTHOGONAL_MOVES = [[-1, 0], [0, -1], [0, 1], [1, 0]]
 
-  attr_reader :face
+  attr_reader :face, :color
+  
+  def initialize(color)
+    @color = color
+  end
 
   def str_to_coord(str)
     col_map = ("a".."g").to_a
@@ -26,13 +28,15 @@ class Piece
 end
 
 class EmptyPiece < Piece
-  def initialize
-    @face = "__"
+  def initialize(color = ' ')
+    super(color)
+    @face = "--"
   end
 end
 
 class King < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Ki"
   end
 
@@ -42,7 +46,8 @@ class King < Piece
 end
 
 class Queen < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Qu"
   end
 
@@ -56,7 +61,8 @@ class Queen < Piece
 end
 
 class Bishop < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Bi"
   end
 
@@ -70,7 +76,8 @@ class Bishop < Piece
 end
 
 class Knight < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Kn"
   end
 
@@ -89,7 +96,8 @@ class Knight < Piece
 end
 
 class Castle < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Ca"
   end
 
@@ -103,7 +111,8 @@ class Castle < Piece
 end
 
 class Pawn < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Pa"
   end
 
@@ -125,15 +134,15 @@ class Pawn < Piece
 end
 
 
+if __FILE__ == $PROGRAM_NAME
 
+  p = Pawn.new
+  path = p.build_path('b2', 'b3')
+  p path
 
-p = Pawn.new
-path = p.build_path('b2', 'b3')
-p path
+  path.each { |coord_array| puts p.coord_to_str(coord_array) }
 
-path.each { |coord_array| puts p.coord_to_str(coord_array) }
-
-
+end
 
 
 

@@ -31,50 +31,44 @@ class Board
         board[row][col] = EmptyPiece.new
       end
     end
+    
     add_pieces(board)
-
-    # board = []
-    # 8.times do |rows|
-    #   row = []
-    #   8.times do |row_element|
-    #     row << EmptyPiece.new
-    #   end
-    #   board << row
-    # end
-    # board = board.transpose
   end
 
   def add_pieces(board)
-    board[0][0] = Castle.new # "Ca"
-    board[0][1] = Knight.new # "Kn"
-    board[0][2] = Bishop.new # "Bi"
-    board[0][3] = King.new # "Ki"
-    board[0][4] = Queen.new # "Qu"
-    board[0][5] = Bishop.new # "Bi"
-    board[0][6] = Knight.new # "Kn"
-    board[0][7] = Castle.new # "Ca"
-    board[1].map! { |tile| tile = Pawn.new } # "Pa"
+    board[0][0] = Castle.new(:b) # "Ca"
+    board[0][1] = Knight.new(:b) # "Kn"
+    board[0][2] = Bishop.new(:b) # "Bi"
+    board[0][3] = King.new(:b) # "Ki"
+    board[0][4] = Queen.new(:b) # "Qu"
+    board[0][5] = Bishop.new(:b) # "Bi"
+    board[0][6] = Knight.new(:b) # "Kn"
+    board[0][7] = Castle.new(:b) # "Ca"
+    board[1].map! { |tile| tile = Pawn.new(:b) } # "Pa"
 
-    board[7][0] = Castle.new # "Ca"
-    board[7][1] = Knight.new # "Kn"
-    board[7][2] = Bishop.new # "Bi"
-    board[7][3] = King.new # "Ki"
-    board[7][4] = Queen.new # "Qu"
-    board[7][5] = Bishop.new # "Bi"
-    board[7][6] = Knight.new # "Kn"
-    board[7][7] = Castle.new # "Ca"
-    board[6].map! { |tile| tile = Pawn.new } # "Pa"
+    board[7][0] = Castle.new(:w) # "Ca"
+    board[7][1] = Knight.new(:w) # "Kn"
+    board[7][2] = Bishop.new(:w) # "Bi"
+    board[7][3] = King.new(:w) # "Ki"
+    board[7][4] = Queen.new(:w) # "Qu"
+    board[7][5] = Bishop.new(:w) # "Bi"
+    board[7][6] = Knight.new(:w) # "Kn"
+    board[7][7] = Castle.new(:w) # "Ca"
+    board[6].map! { |tile| tile = Pawn.new(:w) } # "Pa"
 
     board
   end
 
   def display_board
     puts
-    puts "  a  b  c  d  e  f  g  h"
-    puts "  0  1  2  3  4  5  6  7"
+    puts "  |  a    b    c    d    e    f    g    h"
+    puts "________________________________________"
     @chess_board.each_with_index do |row, idx|
-      row_view = row.map { |piece| piece.face}.join(" ")
-      puts "#{idx} #{row_view}"
+      row_view = row.map do |piece| 
+        (piece.face + '_' + piece.color.to_s)
+      end
+      puts "#{8 - idx}| #{row_view.join(' ')}"
+      puts " |"
     end
   end
 
@@ -125,19 +119,24 @@ class Board
   end
 end
 
-b = Board.new
-coord = b.str_to_coord('d6')
-puts "coord #{coord}"
+if __FILE__ == $PROGRAM_NAME
 
-string = b.coord_to_str(coord)
-puts "string = #{string}"
-
-puts "back again:"
-p b.str_to_coord(string)
-
-# b.display_board
-# b.place_move([1,1],[2,1])
-# b.place_move([7,6],[5,5])
-# b.display_board
+  b = Board.new
+  # input_string = 'd6'
+  # puts "for position '#{input_string}' we get:"
+  # coord = b.str_to_coord(input_string)
+  # puts "coord #{coord}"
+  # 
+  # string = b.coord_to_str(coord)
+  # puts "string = #{string}"
+  # 
+  # puts "back again:"
+  # p b.str_to_coord(string)
+  b.display_board
+  #b.place_move()
+  # b.place_move([7,6],[5,5])
+  # b.display_board
+  
+end
 
 

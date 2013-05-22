@@ -15,7 +15,7 @@ class	Player
 end
 
 if __FILE__ == $PROGRAM_NAME
-  player = Player.new('Olena', 'white')
+  player = Player.new('Olena', :w)
   input = player.ask_move
   
   puts "Received your input"
