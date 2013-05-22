@@ -3,8 +3,9 @@ require_relative "player"
 
 class Game
 	attr_accessor :players, :game_board
-
-	def initialize(player1, player2)
+  include Conversion
+	
+  def initialize(player1, player2)
     @game_board = Board.new
     @players = [player1, player2] # first is white, second is black
 	end

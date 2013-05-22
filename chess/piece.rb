@@ -1,38 +1,27 @@
-#require_relative "board.rb"
-
-puts "Piece is loaded......"
+require_relative "conversion.rb"
 
 class Piece
   DIAGONAL_MOVES = [[-1, -1], [-1, 1], [1, -1], [1, 1]]
   ORTHOGONAL_MOVES = [[-1, 0], [0, -1], [0, 1], [1, 0]]
 
-  attr_reader :face
-
-  def str_to_coord(str)
-    col_map = ("a".."g").to_a
-    col, row = str.chars.to_a
-
-    [col_map.index(col), (row.to_i - 1)] #[column, row]
+  attr_reader :face, :color
+  include Conversion
+  
+  def initialize(color)
+    @color = color
   end
-
-  def coord_to_str(coord_array)
-    col_map = ("a".."g").to_a
-    row, col= coord_array
-    col_string = col_map[col].to_s
-    row_string = (row + 1).to_s
-    col_string + row_string
-  end
-
 end
 
-class EmptyPiece < Piece
-  def initialize
-    @face = "__"
+class Blank < Piece
+  def initialize(color = nil)
+    super(color)
+    @face = "____"
   end
 end
 
 class King < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Ki"
   end
 
@@ -42,7 +31,8 @@ class King < Piece
 end
 
 class Queen < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Qu"
   end
 
@@ -56,7 +46,8 @@ class Queen < Piece
 end
 
 class Bishop < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Bi"
   end
 
@@ -70,7 +61,8 @@ class Bishop < Piece
 end
 
 class Knight < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Kn"
   end
 
@@ -89,7 +81,8 @@ class Knight < Piece
 end
 
 class Castle < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Ca"
   end
 
@@ -103,7 +96,8 @@ class Castle < Piece
 end
 
 class Pawn < Piece
-  def initialize
+  def initialize(color)
+    super(color)
     @face = "Pa"
   end
 
@@ -124,18 +118,9 @@ class Pawn < Piece
   end
 end
 
-
-
-
-p = Pawn.new
-path = p.build_path('b2', 'b3')
-p path
-
-path.each { |coord_array| puts p.coord_to_str(coord_array) }
-
-
-
-
-
-
-
+if __FILE__ == $PROGRAM_NAME
+  p = Pawn.new(:b)
+  path = p.build_path('b2', 'b3')
+  p path
+  path.each { |coord_array| puts p.coord_to_str(coord_array) }
+end
