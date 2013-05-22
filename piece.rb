@@ -1,4 +1,4 @@
-# require_relative "board.rb"
+#require_relative "board.rb"
 
 puts "Piece is loaded......"
 
@@ -7,6 +7,22 @@ class Piece
   ORTHOGONAL_MOVES = [[-1, 0], [0, -1], [0, 1], [1, 0]]
 
   attr_reader :face
+
+  def str_to_coord(str)
+    col_map = ("a".."g").to_a
+    col, row = str.chars.to_a
+
+    [col_map.index(col), (row.to_i - 1)] #[column, row]
+  end
+
+  def coord_to_str(coord_array)
+    col_map = ("a".."g").to_a
+    row, col= coord_array
+    col_string = col_map[col].to_s
+    row_string = (row + 1).to_s
+    col_string + row_string
+  end
+
 end
 
 class EmptyPiece < Piece
@@ -91,8 +107,35 @@ class Pawn < Piece
     @face = "Pa"
   end
 
+  def build_path(start_pos, target_pos)
+    start_col, start_row = str_to_coord(start_pos)
+    target_col, target_row = str_to_coord(target_pos)
+
+    path = [[start_row, start_col]]
+    possible_moves.map do |(row, column)|
+      path << [start_row + row, start_col + column]
+    end
+    path
+  end
+
   def possible_moves
     # TODO: add checking
-    [0, 1]
+    [[1,0]]
   end
 end
+
+
+
+
+p = Pawn.new
+path = p.build_path('b2', 'b3')
+p path
+
+path.each { |coord_array| puts p.coord_to_str(coord_array) }
+
+
+
+
+
+
+
