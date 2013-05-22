@@ -46,7 +46,7 @@ class Board
     board
   end
 
-  def display_board
+  def show_board
     puts
     puts "  | a    b    c    d    e    f    g    h  "
     puts "  ________________________________________"
@@ -205,41 +205,41 @@ end
 if __FILE__ == $PROGRAM_NAME
 
   b = Board.new
-  b.display_board
+  b.show_board
   # p "a2 = #{b.str_to_coord("a2")}"
   # p "a3 = #{b.str_to_coord("a3")}"
   b.place_move('f2','f3')
-  b.display_board
+  b.show_board
 
   # b.place_move('e7','e5')
-  # b.display_board
+  # b.show_board
   #
   # b.place_move('g2','g4')
-  # b.display_board
+  # b.show_board
   #
   # p "#move queen"
   # b.place_move('d8','h4')
-  # b.display_board
+  # b.show_board
   #
   # p "#knight valid move 1"
   # b.place_move('b8','c6')
-  # b.display_board
+  # b.show_board
   #
   # p "#knight valid move 1"
   # b.place_move('c6','a5')
-  # b.display_board
+  # b.show_board
   #
   # p "quen takes a pawn 1"
   # b.place_move('h4','g4')
-  # b.display_board
+  # b.show_board
   #
   # p "#bishop valid move"
   # b.place_move('f8','d6')
-  # b.display_board
+  # b.show_board
   #
   # p "#bishop invalid move"
   # b.place_move('f1','d3')
-  # b.display_board
+  # b.show_board
 end
 
 

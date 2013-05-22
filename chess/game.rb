@@ -13,11 +13,12 @@ class Game
 	def play
     player = players[0]
 		until game_over?
-      success = false
-      until success
-        game_board.display_board
+      move_placed = false
+      until move_placed
+        game_board.show_board
+        game_board.show_king_status(player)
         start_pos, target_pos = player.ask_move #move_array = [f4, f3]
-        success = game_board.place_move_for(player, start_pos, target_pos)
+        move_placed = game_board.place_move_for(player, start_pos, target_pos)
       end
       player = next_player(player)
 		end
