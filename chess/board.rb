@@ -71,28 +71,27 @@ class Board
     # positions
   end
 
-
-  def valid_move?(start_pos, target_pos)
-    start_col, start_row = str_to_coord(star_pos)
-    target_col, target_row = str_to_coord(target_pos)
-
-    piece = chess_board[start_row][start_col]
-    path_array = piece.build_path(start_pos, target_pos) # [start_pos,[],[] ....target_pos]
-
-    #if path
-
-    # are these positions on the board?
-    return false unless on_board?(start_pos) && on_board?(target_pos)
-
-    # can the piece at start_pos make this move?
-    piece_to_move = board
-    return false unless valid_path?(start_pos, target_pos)
-
-    # is start_pos a piece for this player?
-
-    # does making this move jeopardize the players king?
-    # is there a piece blocking this move?
-  end
+  # def valid_move?(start_pos, target_pos)
+  #   start_col, start_row = str_to_coord(star_pos)
+  #   target_col, target_row = str_to_coord(target_pos)
+  #
+  #   piece = chess_board[start_row][start_col]
+  #   path_array = piece.build_path(start_pos, target_pos) # [start_pos,[],[] ....target_pos]
+  #
+  #   #if path
+  #
+  #   # are these positions on the board?
+  #   return false unless on_board?(start_pos) && on_board?(target_pos)
+  #
+  #   # can the piece at start_pos make this move?
+  #   piece_to_move = board
+  #   return false unless valid_path?(start_pos, target_pos)
+  #
+  #   # is start_pos a piece for this player?
+  #
+  #   # does making this move jeopardize the players king?
+  #   # is there a piece blocking this move?
+  # end
 
   def place_move(start_pos, target_pos) # returns true or false
     x_start, y_start = str_to_coord(start_pos)
@@ -106,17 +105,70 @@ class Board
 
     move_vector, move_range = make_move_vector(start_pos, target_pos)
 
-    #ask piece whether this vector is ints list
+    first_check = valid_direction_for?(piece, move_vector)
+    p "first_check: #{first_check}"
 
+    second_check = valid_range_for?(piece, move_range)
+    p "piece range: #{piece.range} vs. move_range: #{move_range}"
+    p "second_check: #{second_check}"
+
+    third_check = path_blocked_for?(piece, move_vector, start_pos, target_pos)
+
+    if (first_check && second_check && third_check )
+      @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
+      @chess_board[y_start][x_start] = Blank.new
+      puts "Move was placed"
+    else
+      puts "Move was rejected!"
+    end
+  end
+
+
+  def make_move_vector(start_pos, target_pos)
+    x_start, y_start = str_to_coord(start_pos)
+    x_targ, y_targ = str_to_coord(target_pos)
+    piece = @chess_board[y_start][x_start]
+
+    unless piece.is_a? Knight
+      #calc vector and its length/range
+      vector_move_x = (x_targ - x_start).to_f
+      vector_move_x = vector_move_x / (x_targ - x_start).to_f.abs unless (x_targ - x_start).zero?
+
+      vector_move_y = (y_targ - y_start).to_f
+      vector_move_y = vector_move_y / (y_targ - y_start).to_f.abs unless (y_targ - y_start).zero?
+
+      move_vector = [vector_move_y, vector_move_x]
+      move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+    else # if piece is a knight
+      vector_move_x = (x_targ - x_start)
+      vector_move_y = (y_targ - y_start)
+      move_vector = [vector_move_y, vector_move_x]
+      move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+    end
+    p "vector_move_x: #{vector_move_x}, vector_move_y: #{vector_move_y}"
+    p "move_vector: #{move_vector}"
+    p "move_range: #{move_range}"
+
+    [move_vector, move_range]
+  end
+
+  private
+
+  # ask piece whether this vector is in its list
+  def valid_direction_for?(piece, move_vector)
     possible_vectors = piece.vectors
     p "possible_vectors: #{possible_vectors}"
 
-    first_check = possible_vectors.include?(move_vector)
-    p "first_check: #{first_check}"
+    possible_vectors.include?(move_vector)
+  end
 
-    second_check = (move_range.to_i <= piece.range)
-    p "piece range: #{piece.range} vs. move_range: #{move_range}"
-    p "second_check: #{second_check}"
+  def valid_range_for?(piece, move_range)
+    move_range.to_i <= piece.range
+  end
+
+  def path_blocked_for?(piece, move_vector, start_pos, target_pos)
+    x_start, y_start = str_to_coord(start_pos)
+    x_targ, y_targ = str_to_coord(target_pos)
 
     third_check = true
     unless piece.is_a? Knight
@@ -151,58 +203,7 @@ class Board
       p "third_check: #{third_check}"
     end
 
-    if (first_check && second_check && third_check )#valid_move?(start_pos, target_pos)
-      @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
-      @chess_board[y_start][x_start] = Blank.new
-      puts "Move was placed"
-    else
-      puts "Move was rejected!"
-    end
-  end
-
-
-  def make_move_vector(start_pos, target_pos)
-    x_start, y_start = str_to_coord(start_pos)
-    x_targ, y_targ = str_to_coord(target_pos)
-    piece = @chess_board[y_start][x_start]
-
-    unless piece.is_a? Knight
-      #calc vector and its length/range
-      vector_move_x = (x_targ - x_start).to_f
-      vector_move_x = vector_move_x / (x_targ - x_start).to_f.abs unless (x_targ - x_start).zero?
-
-      vector_move_y = (y_targ - y_start).to_f
-      vector_move_y = vector_move_y / (y_targ - y_start).to_f.abs unless (y_targ - y_start).zero?
-
-      move_vector = [vector_move_y, vector_move_x]
-      move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
-    else # if piece is a knight
-       vector_move_x = (x_targ - x_start)
-       vector_move_y = (y_targ - y_start)
-       move_vector = [vector_move_y, vector_move_x]
-       move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
-    end
-    p "vector_move_x: #{vector_move_x}, vector_move_y: #{vector_move_y}"
-    p "move_vector: #{move_vector}"
-    p "move_range: #{move_range}"
-
-    [move_vector, move_range]
-  end
-
-  def first_sheck?(piece, move_vector)
-    #ask piece whether this vector is ints list
-
-    possible_vectors = piece.vectors
-    p "possible_vectors: #{possible_vectors}"
-
-    possible_vectors.include?(move_vector)
-  end
-
-  def second_check?()
-
-  end
-  def third_check?()
-
+    third_check
   end
 end
 
