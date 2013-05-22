@@ -99,9 +99,9 @@ class Board
     p "piece range: #{piece.range} vs. move_range: #{move_range}"
     p "valid_range: #{valid_range}"
 
-    path_blocked = path_blocked_for?(piece, move_vector, start_pos, target_pos)
+    path_open = path_open_for?(piece, start_pos, target_pos)
 
-    if (valid_direction && valid_range && path_blocked)
+    if (valid_direction && valid_range && path_open)
       @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
       @chess_board[y_start][x_start] = Blank.new
       puts "Move was placed"
@@ -154,44 +154,54 @@ class Board
     move_range.to_i <= piece.range
   end
 
-  def path_blocked_for?(piece, move_vector, start_pos, target_pos)
+  def path_for(piece, start_pos, target_pos)
     x_start, y_start = str_to_coord(start_pos)
     x_targ, y_targ = str_to_coord(target_pos)
 
-    path_blocked = true
+    move_vector, move_range = make_move_vector(start_pos, target_pos)
+
+    vector_move_y, vector_move_x = move_vector
+    path = []
+    path_strings = []
+    (piece.range - 1).times do |tile_index|
+      tile_coord_x = x_start + (vector_move_x * tile_index)
+      tile_coord_y = y_start + (vector_move_y * tile_index)
+      tile_coords = [tile_coord_y.to_i, tile_coord_x.to_i]
+
+      break if tile_coords == [y_targ, x_targ]
+      path << tile_coords
+
+      #convert to chess lingo
+      tile_string = coord_to_str(tile_coords)
+      path_strings << tile_string
+    end
+    p "path before select: #{path}"
+
+    path.select! do |(row,col)|
+      [row,col] != [y_start, x_start] &&
+      [row,col] != [y_targ, x_targ] &&
+      (0...8).include?(row) &&
+      (0...8).include?(col)
+    end
+    p "path: #{path_strings} includes start and end tiles"
+    p "path: #{path}"
+    path
+  end
+
+  def path_open_for?(piece, start_pos, target_pos)
+
+    path_open = true
     unless piece.is_a? Knight
-      #third check
-      # is there any other pieces in the path of the move
-      # and path includes start and target positions
-      vector_move_y, vector_move_x = move_vector
-      path = []
-      path_strings = []
-      (piece.range - 1).times do |tile_index|
-        tile_coord_x = x_start + (vector_move_x * tile_index)
-        tile_coord_y = y_start + (vector_move_y * tile_index)
-        tile_coords = [tile_coord_y.to_i, tile_coord_x.to_i]
-        path << tile_coords
+      path = path_for(piece, start_pos, target_pos)
+      path_open = path.nil?
 
-        #convert to chess lingo
-        tile_string = coord_to_str(tile_coords)
-        path_strings << tile_string
-      end
-      path.select! do |(row,col)|
-        [row,col] != [y_start, x_start] &&
-        [row,col] != [y_targ, x_targ] &&
-        (0...8).include?(row) &&
-        (0...8).include?(col)
-      end
-      p "path: #{path_strings} includes start and end tiles"
-      p "path: #{path}"
-
-      path_blocked = path.all? do |(row, col)|
+      path_open = path.all? do |(row, col)|
         @chess_board[row][col].is_a? Blank # true
       end
-      p "path_blocked: #{path_blocked}"
+      p "path_open? #{path_open}"
     end
 
-    path_blocked
+    path_open
   end
 end
 

@@ -13,6 +13,6 @@ module Conversion
     row, col= coord_array
     col_string = col_map[col].to_s
     row_string = (8 - row).to_s       # 0 => 8
-    col_string + row_string
+    "#{col_string}#{row_string}"
   end
 end
