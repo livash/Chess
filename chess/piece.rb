@@ -21,53 +21,53 @@ class Blank < Piece
 end
 
 class King < Piece
+  attr_reader :range
   def initialize(color)
     super(color)
     @face = "Ki"
+    @range = 1
   end
 
-  def possible_moves
+  def vectors
     DIAGONAL_MOVES + ORTHOGONAL_MOVES
   end
 end
 
 class Queen < Piece
+   attr_reader :range
   def initialize(color)
     super(color)
     @face = "Qu"
+    @range = 8
   end
 
-  def possible_moves
-    KING_MOVES.map do |(x, y)|
-      expand_arr = []
-      1.upto(7) { |i| expand_arr << [x * i, y * i] }
-      expand_arr
-    end.flatten(1)
+  def vectors
+     DIAGONAL_MOVES + ORTHOGONAL_MOVES
   end
 end
 
 class Bishop < Piece
+   attr_reader :range
   def initialize(color)
     super(color)
     @face = "Bi"
+    @range = 8
   end
 
-  def possible_moves
-    DIAGONAL_MOVES.map do |(x, y)|
-      expand_arr = []
-      1.upto(7) { |i| expand_arr << [x * i, y * i] }
-      expand_arr
-    end.flatten(1)
+  def vectors
+    DIAGONAL_MOVES
   end
 end
 
 class Knight < Piece
+  attr_reader :range
   def initialize(color)
     super(color)
     @face = "Kn"
+    @range = 1
   end
 
-  def possible_moves
+  def vectors
     [
       [-2, -1],
       [-2,  1],
@@ -82,40 +82,36 @@ class Knight < Piece
 end
 
 class Castle < Piece
+  attr_reader :range
   def initialize(color)
     super(color)
     @face = "Ca"
+    @range = 8
   end
 
-  def possible_moves
-    ORTHOGONAL_MOVES.map do |(x, y)|
-      expand_arr = []
-      1.upto(7) { |i| expand_arr << [x * i, y * i] }
-      expand_arr
-    end.flatten(1)
+  def vectors
+    ORTHOGONAL_MOVES
   end
 end
 
 class Pawn < Piece
+  attr_reader :range
   def initialize(color)
     super(color)
     @face = "Pa"
+    @range = 2
   end
 
-  def build_path(start_pos, target_pos)
-    start_col, start_row = str_to_coord(start_pos)
-    target_col, target_row = str_to_coord(target_pos)
-
-    path = [[start_row, start_col]]
-    possible_moves.map do |(row, column)|
-      path << [start_row + row, start_col + column]
-    end
-    path
-  end
-
-  def possible_moves
+  def vectors
     # TODO: add checking
-    [[1,0]]
+    case self.color
+    when :b
+      [[1,0], [1,-1], [1,1]]
+    when :w
+      [[-1,0], [-1,-1], [-1,1]]
+    else
+      raise "Need color to move Pawn."
+    end
   end
 end
 

@@ -9,21 +9,6 @@ class Board
     @chess_board = generate_board
   end
 
-  def str_to_coord(str) # f3
-    col_map = ("a".."g").to_a
-    str_col, str_row = str.chars.to_a
-    coord_col = col_map.index(str_col)
-    coord_row = (str_row.to_i - 1)
-    [coord_col, coord_row] #
-  end
-
-  def coord_to_str(coord_array)
-    col_map = ("a".."g").to_a
-    row, col= coord_array
-    col_string = col_map[col].to_s
-    row_string = (row + 1).to_s
-    col_string + row_string
-  end
 
   def generate_board
     board = []
@@ -41,8 +26,8 @@ class Board
     board[0][0] = Castle.new(:b) # "Ca"
     board[0][1] = Knight.new(:b) # "Kn"
     board[0][2] = Bishop.new(:b) # "Bi"
-    board[0][3] = King.new(:b) # "Ki"
-    board[0][4] = Queen.new(:b) # "Qu"
+    board[0][3] = Queen.new(:b) # "Qu"
+    board[0][4] = King.new(:b) # "Ki"
     board[0][5] = Bishop.new(:b) # "Bi"
     board[0][6] = Knight.new(:b) # "Kn"
     board[0][7] = Castle.new(:b) # "Ca"
@@ -51,8 +36,8 @@ class Board
     board[7][0] = Castle.new(:w) # "Ca"
     board[7][1] = Knight.new(:w) # "Kn"
     board[7][2] = Bishop.new(:w) # "Bi"
-    board[7][3] = King.new(:w) # "Ki"
-    board[7][4] = Queen.new(:w) # "Qu"
+    board[7][3] = Queen.new(:w) # "Qu"
+    board[7][4] = King.new(:w) # "Ki"
     board[7][5] = Bishop.new(:w) # "Bi"
     board[7][6] = Knight.new(:w) # "Kn"
     board[7][7] = Castle.new(:w) # "Ca"
@@ -86,11 +71,7 @@ class Board
     # positions
   end
 
-  # def valid_path?
-  #
-  # end
-  #FIGURE OUT  X  AND   Y
-  #!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
   def valid_move?(start_pos, target_pos)
     start_col, start_row = str_to_coord(star_pos)
     target_col, target_row = str_to_coord(target_pos)
@@ -114,36 +95,80 @@ class Board
   end
 
   def place_move(start_pos, target_pos) # returns true or false
-    y_start, x_start = start_pos
-    y_targ, x_targ = target_pos
+    x_start, y_start = str_to_coord(start_pos)
+    x_targ, y_targ = str_to_coord(target_pos)
 
-    #if valid_move?(start_pos, target_pos)
+    p "y_start: #{y_start}, x_start: #{x_start}"
+    p "y_targ: #{y_targ}, x_targ: #{x_targ}"
+
+    #calc vector and its length/range
+    vector_move_x = (x_targ - x_start).to_f
+    vector_move_x = vector_move_x / (x_targ - x_start).to_f.abs unless (x_targ - x_start).zero?
+
+    vector_move_y = (y_targ - y_start).to_f
+    vector_move_y = vector_move_y / (y_targ - y_start).to_f.abs unless (y_targ - y_start).zero?
+
+    move_vector = [vector_move_y, vector_move_x]
+    move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+
+    p "vector_move_x: #{vector_move_x}, vector_move_y: #{vector_move_y}"
+    p "move_vector: #{move_vector}"
+    p "move_range: #{move_range}"
+
+    #ask piece whether this vector is ints list
+    piece = @chess_board[y_start][x_start]
+    possible_vectors = piece.vectors
+
+    p "piece: #{piece.face} #{piece.color}"
+    p "possible_vectors: #{possible_vectors}"
+
+    first_check = possible_vectors.include?(move_vector)
+    p "first_check: #{first_check}"
+
+    second_check = (move_range.to_i <= piece.range)
+    p "piece range: #{piece.range} vs. move_range: #{move_range}"
+    p "second_check: #{second_check}"
+
+    #third check
+    # is there any other pieces in the path of the move
+    # and path includes start and target positions
+    path = []
+    piece.range.times do |tile_index|
+      tile_coord_x = x_start + (vector_move_x * tile_index)
+      tile_coord_y = y_start + (vector_move_y * tile_index)
+      tile_coords = [tile_coord_y, tile_coord_x]
+      path << tile_coords
+    end
+    p "path: #{path}"
+
+    if (first_check && second_check )#valid_move?(start_pos, target_pos)
       @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
-      @chess_board[y_start][x_start] = EmptyPiece.new
+      @chess_board[y_start][x_start] = Blank.new
       puts "Move was placed"
-    # true
-    # else
-#       puts "Move was rejected!"
-#       false
-#     end
+    else
+      puts "Move was rejected!"
+    end
   end
 end
 
 if __FILE__ == $PROGRAM_NAME
 
   b = Board.new
-  input_string = 'd6'
-  puts "for position '#{input_string}' we get:"
-  coord = b.str_to_coord(input_string)
-  puts "coord #{coord}"
-  #
-  # string = b.coord_to_str(coord)
-  # puts "string = #{string}"
-  #
-  # puts "back again:"
-  # p b.str_to_coord(string)
   b.display_board
-  #b.place_move()
+  # p "a2 = #{b.str_to_coord("a2")}"
+  # p "a3 = #{b.str_to_coord("a3")}"
+  b.place_move('f2','f3')
+  b.display_board
+
+  b.place_move('e7','e5')
+  b.display_board
+
+  b.place_move('g2','g4')
+  b.display_board
+
+  b.place_move('d8','h4')
+  b.display_board
+
   # b.place_move([7,6],[5,5])
   # b.display_board
 
