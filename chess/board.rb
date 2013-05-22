@@ -104,6 +104,68 @@ class Board
     piece = @chess_board[y_start][x_start]
     p "piece: #{piece.face} #{piece.color}"
 
+    move_vector, move_range = make_move_vector(start_pos, target_pos)
+
+    #ask piece whether this vector is ints list
+
+    possible_vectors = piece.vectors
+    p "possible_vectors: #{possible_vectors}"
+
+    first_check = possible_vectors.include?(move_vector)
+    p "first_check: #{first_check}"
+
+    second_check = (move_range.to_i <= piece.range)
+    p "piece range: #{piece.range} vs. move_range: #{move_range}"
+    p "second_check: #{second_check}"
+
+    third_check = true
+    unless piece.is_a? Knight
+      #third check
+      # is there any other pieces in the path of the move
+      # and path includes start and target positions
+      vector_move_y, vector_move_x = move_vector
+      path = []
+      path_strings = []
+      (piece.range - 1).times do |tile_index|
+        tile_coord_x = x_start + (vector_move_x * tile_index)
+        tile_coord_y = y_start + (vector_move_y * tile_index)
+        tile_coords = [tile_coord_y.to_i, tile_coord_x.to_i]
+        path << tile_coords
+
+        #convert to chess lingo
+        tile_string = coord_to_str(tile_coords)
+        path_strings << tile_string
+      end
+      path.select! do |(row,col)|
+        [row,col] != [y_start, x_start] &&
+        [row,col] != [y_targ, x_targ] &&
+        (0...8).include?(row) &&
+        (0...8).include?(col)
+      end
+      p "path: #{path_strings} includes start and end tiles"
+      p "path: #{path}"
+
+      third_check = path.all? do |(row, col)|
+        @chess_board[row][col].is_a? Blank # true
+      end
+      p "third_check: #{third_check}"
+    end
+
+    if (first_check && second_check && third_check )#valid_move?(start_pos, target_pos)
+      @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
+      @chess_board[y_start][x_start] = Blank.new
+      puts "Move was placed"
+    else
+      puts "Move was rejected!"
+    end
+  end
+
+
+  def make_move_vector(start_pos, target_pos)
+    x_start, y_start = str_to_coord(start_pos)
+    x_targ, y_targ = str_to_coord(target_pos)
+    piece = @chess_board[y_start][x_start]
+
     unless piece.is_a? Knight
       #calc vector and its length/range
       vector_move_x = (x_targ - x_start).to_f
@@ -120,42 +182,27 @@ class Board
        move_vector = [vector_move_y, vector_move_x]
        move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
     end
-
     p "vector_move_x: #{vector_move_x}, vector_move_y: #{vector_move_y}"
     p "move_vector: #{move_vector}"
     p "move_range: #{move_range}"
 
+    [move_vector, move_range]
+  end
+
+  def first_sheck?(piece, move_vector)
     #ask piece whether this vector is ints list
 
     possible_vectors = piece.vectors
     p "possible_vectors: #{possible_vectors}"
 
-    first_check = possible_vectors.include?(move_vector)
-    p "first_check: #{first_check}"
+    possible_vectors.include?(move_vector)
+  end
 
-    second_check = (move_range.to_i <= piece.range)
-    p "piece range: #{piece.range} vs. move_range: #{move_range}"
-    p "second_check: #{second_check}"
+  def second_check?()
 
-    #third check
-    # is there any other pieces in the path of the move
-    # and path includes start and target positions
-    path = []
-    piece.range.times do |tile_index|
-      tile_coord_x = x_start + (vector_move_x * tile_index)
-      tile_coord_y = y_start + (vector_move_y * tile_index)
-      tile_coords = [tile_coord_y, tile_coord_x]
-      path << tile_coords
-    end
-    p "path: #{path}"
+  end
+  def third_check?()
 
-    if (first_check && second_check )#valid_move?(start_pos, target_pos)
-      @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
-      @chess_board[y_start][x_start] = Blank.new
-      puts "Move was placed"
-    else
-      puts "Move was rejected!"
-    end
   end
 end
 
@@ -168,38 +215,35 @@ if __FILE__ == $PROGRAM_NAME
   b.place_move('f2','f3')
   b.display_board
 
-  b.place_move('e7','e5')
-  b.display_board
-
-  b.place_move('g2','g4')
-  b.display_board
-
-  b.place_move('d8','h4')
-  b.display_board
-
-  p "#knight valid move"
-  b.place_move('b8','c6')
-  b.display_board
-
-  p "#knight invalid move"
-  b.place_move('c6','a5')
-  b.display_board
-
-  p "quen takes a pawn"
-  b.place_move('h4','g4')
-  b.display_board
-
-  p "quen takes a pawn"
-  b.place_move('g4','f3')
-  b.display_board
-  # p "#knight invalid move"
-  # b.place_move('g8','c4')
+  # b.place_move('e7','e5')
   # b.display_board
-
-
-  # b.place_move([7,6],[5,5])
+  #
+  # b.place_move('g2','g4')
   # b.display_board
-
+  #
+  # p "#move queen"
+  # b.place_move('d8','h4')
+  # b.display_board
+  #
+  # p "#knight valid move 1"
+  # b.place_move('b8','c6')
+  # b.display_board
+  #
+  # p "#knight valid move 1"
+  # b.place_move('c6','a5')
+  # b.display_board
+  #
+  # p "quen takes a pawn 1"
+  # b.place_move('h4','g4')
+  # b.display_board
+  #
+  # p "#bishop valid move"
+  # b.place_move('f8','d6')
+  # b.display_board
+  #
+  # p "#bishop invalid move"
+  # b.place_move('f1','d3')
+  # b.display_board
 end
 
 
