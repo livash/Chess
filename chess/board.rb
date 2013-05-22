@@ -72,28 +72,15 @@ class Board
   end
 
   # def valid_move?(start_pos, target_pos)
-  #   start_col, start_row = str_to_coord(star_pos)
-  #   target_col, target_row = str_to_coord(target_pos)
+  #   x_start, y_start = str_to_coord(start_pos)
+  #   x_targ, y_targ = str_to_coord(target_pos)
   #
-  #   piece = chess_board[start_row][start_col]
-  #   path_array = piece.build_path(start_pos, target_pos) # [start_pos,[],[] ....target_pos]
   #
-  #   #if path
-  #
-  #   # are these positions on the board?
-  #   return false unless on_board?(start_pos) && on_board?(target_pos)
-  #
-  #   # can the piece at start_pos make this move?
-  #   piece_to_move = board
-  #   return false unless valid_path?(start_pos, target_pos)
-  #
-  #   # is start_pos a piece for this player?
-  #
-  #   # does making this move jeopardize the players king?
-  #   # is there a piece blocking this move?
   # end
 
   def place_move(start_pos, target_pos) # returns true or false
+    return false unless (start_pos && target_pos)
+
     x_start, y_start = str_to_coord(start_pos)
     x_targ, y_targ = str_to_coord(target_pos)
 
@@ -105,24 +92,27 @@ class Board
 
     move_vector, move_range = make_move_vector(start_pos, target_pos)
 
-    first_check = valid_direction_for?(piece, move_vector)
-    p "first_check: #{first_check}"
+    valid_direction = valid_direction_for?(piece, move_vector)
+    p "valid_direction: #{valid_direction}"
 
-    second_check = valid_range_for?(piece, move_range)
+    valid_range = valid_range_for?(piece, move_range)
     p "piece range: #{piece.range} vs. move_range: #{move_range}"
-    p "second_check: #{second_check}"
+    p "valid_range: #{valid_range}"
 
-    third_check = path_blocked_for?(piece, move_vector, start_pos, target_pos)
+    path_blocked = path_blocked_for?(piece, move_vector, start_pos, target_pos)
 
-    if (first_check && second_check && third_check )
+    if (valid_direction && valid_range && path_blocked)
       @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
       @chess_board[y_start][x_start] = Blank.new
       puts "Move was placed"
+      true
     else
       puts "Move was rejected!"
+      false
     end
   end
 
+  private
 
   def make_move_vector(start_pos, target_pos)
     x_start, y_start = str_to_coord(start_pos)
@@ -152,8 +142,6 @@ class Board
     [move_vector, move_range]
   end
 
-  private
-
   # ask piece whether this vector is in its list
   def valid_direction_for?(piece, move_vector)
     possible_vectors = piece.vectors
@@ -170,7 +158,7 @@ class Board
     x_start, y_start = str_to_coord(start_pos)
     x_targ, y_targ = str_to_coord(target_pos)
 
-    third_check = true
+    path_blocked = true
     unless piece.is_a? Knight
       #third check
       # is there any other pieces in the path of the move
@@ -197,13 +185,13 @@ class Board
       p "path: #{path_strings} includes start and end tiles"
       p "path: #{path}"
 
-      third_check = path.all? do |(row, col)|
+      path_blocked = path.all? do |(row, col)|
         @chess_board[row][col].is_a? Blank # true
       end
-      p "third_check: #{third_check}"
+      p "path_blocked: #{path_blocked}"
     end
 
-    third_check
+    path_blocked
   end
 end
 

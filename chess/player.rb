@@ -8,8 +8,9 @@ class	Player
 
   def ask_move
     # OPTIMIZE: add error checking
-    print "Enter your move [ex: f4,f5]: "
-    start_pos, target_pos = gets.chomp.split(",")
+    print "#{name}, enter your move [ex: f4, f5]: "
+    move = gets.chomp.gsub(" ", "") #.split(",")
+    start_pos, target_pos = move.split(",")
     [start_pos, target_pos]
   end
 end
