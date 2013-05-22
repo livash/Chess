@@ -14,7 +14,7 @@ class Board
     str_col, str_row = str.chars.to_a
     coord_col = col_map.index(str_col)
     coord_row = (str_row.to_i - 1)
-    [coord_col, coord_row] # 
+    [coord_col, coord_row] #
   end
 
   def coord_to_str(coord_array)
@@ -33,7 +33,7 @@ class Board
         board[row][col] = Blank.new
       end
     end
-    
+
     add_pieces(board)
   end
 
@@ -136,17 +136,17 @@ if __FILE__ == $PROGRAM_NAME
   puts "for position '#{input_string}' we get:"
   coord = b.str_to_coord(input_string)
   puts "coord #{coord}"
-  # 
+  #
   # string = b.coord_to_str(coord)
   # puts "string = #{string}"
-  # 
+  #
   # puts "back again:"
   # p b.str_to_coord(string)
   b.display_board
   #b.place_move()
   # b.place_move([7,6],[5,5])
   # b.display_board
-  
+
 end
 
 

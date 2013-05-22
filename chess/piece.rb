@@ -1,4 +1,5 @@
 require_relative "conversion.rb"
+#require_relative "board.rb"
 
 class Piece
   DIAGONAL_MOVES = [[-1, -1], [-1, 1], [1, -1], [1, 1]]
@@ -6,7 +7,7 @@ class Piece
 
   attr_reader :face, :color
   include Conversion
-  
+
   def initialize(color)
     @color = color
   end
