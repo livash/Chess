@@ -105,9 +105,9 @@ class Pawn < Piece
   def vectors
     # TODO: add checking
     case self.color
-    when :b
-      [[1,0], [1,-1], [1,1]]
     when :w
+      [[1,0], [1,-1], [1,1]]
+    when :b
       [[-1,0], [-1,-1], [-1,1]]
     else
       raise "Need color to move Pawn."

@@ -23,25 +23,25 @@ class Board
   end
 
   def add_pieces(board)
-    board[0][0] = Castle.new(:b) # "Ca"
-    board[0][1] = Knight.new(:b) # "Kn"
-    board[0][2] = Bishop.new(:b) # "Bi"
-    board[0][3] = Queen.new(:b) # "Qu"
-    board[0][4] = King.new(:b) # "Ki"
-    board[0][5] = Bishop.new(:b) # "Bi"
-    board[0][6] = Knight.new(:b) # "Kn"
-    board[0][7] = Castle.new(:b) # "Ca"
-    board[1].map! { |tile| tile = Pawn.new(:b) } # "Pa"
+    board[0][0] = Castle.new(:w) # "Ca"
+    board[0][1] = Knight.new(:w) # "Kn"
+    board[0][2] = Bishop.new(:w) # "Bi"
+    board[0][3] = Queen.new(:w) # "Qu"
+    board[0][4] = King.new(:w) # "Ki"
+    board[0][5] = Bishop.new(:w) # "Bi"
+    board[0][6] = Knight.new(:w) # "Kn"
+    board[0][7] = Castle.new(:w) # "Ca"
+    board[1].map! { |tile| tile = Pawn.new(:w) } # "Pa"
 
-    board[7][0] = Castle.new(:w) # "Ca"
-    board[7][1] = Knight.new(:w) # "Kn"
-    board[7][2] = Bishop.new(:w) # "Bi"
-    board[7][3] = Queen.new(:w) # "Qu"
-    board[7][4] = King.new(:w) # "Ki"
-    board[7][5] = Bishop.new(:w) # "Bi"
-    board[7][6] = Knight.new(:w) # "Kn"
-    board[7][7] = Castle.new(:w) # "Ca"
-    board[6].map! { |tile| tile = Pawn.new(:w) } # "Pa"
+    board[7][0] = Castle.new(:b) # "Ca"
+    board[7][1] = Knight.new(:b) # "Kn"
+    board[7][2] = Bishop.new(:b) # "Bi"
+    board[7][3] = Queen.new(:b) # "Qu"
+    board[7][4] = King.new(:b) # "Ki"
+    board[7][5] = Bishop.new(:b) # "Bi"
+    board[7][6] = Knight.new(:b) # "Kn"
+    board[7][7] = Castle.new(:b) # "Ca"
+    board[6].map! { |tile| tile = Pawn.new(:b) } # "Pa"
 
     board
   end
@@ -67,18 +67,8 @@ class Board
     end
   end
 
-  def on_board?(position)
-    # positions
-  end
-
-  # def valid_move?(start_pos, target_pos)
-  #   x_start, y_start = str_to_coord(start_pos)
-  #   x_targ, y_targ = str_to_coord(target_pos)
-  #
-  #
-  # end
-
-  def place_move(start_pos, target_pos) # returns true or false
+  def place_move_for(player, start_pos, target_pos) # returns true or false
+    p "start_pos and target_pos exist: #{(start_pos && target_pos)}"
     return false unless (start_pos && target_pos)
 
     x_start, y_start = str_to_coord(start_pos)
@@ -89,6 +79,13 @@ class Board
 
     piece = @chess_board[y_start][x_start]
     p "piece: #{piece.face} #{piece.color}"
+
+    piece_targ = chess_board[y_targ][x_targ]
+    p "#{player.name} trying to take own piece? #{(piece.color == piece_targ.color)}"
+    return false if piece.color == piece_targ.color
+
+    p "#{player.name}'s piece? #{piece.color == player.color}"
+    return false unless piece.color == player.color
 
     move_vector, move_range = make_move_vector(start_pos, target_pos)
 

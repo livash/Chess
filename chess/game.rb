@@ -6,8 +6,8 @@ class Game
   include Conversion
 
   def initialize(player1, player2)
-    @game_board = Board.new
     @players = [player1, player2] # first is white, second is black
+    @game_board = Board.new #(players)
 	end
 
 	def play
@@ -17,7 +17,7 @@ class Game
       until success
         game_board.display_board
         start_pos, target_pos = player.ask_move #move_array = [f4, f3]
-        success = game_board.place_move(start_pos, target_pos)
+        success = game_board.place_move_for(player, start_pos, target_pos)
       end
       player = next_player(player)
 		end
