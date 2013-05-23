@@ -103,7 +103,7 @@ class Board
         end
         status = dummy_board.place_move_for(opponent_color, piece_pos, king_pos)
         logger.info "status of attempted move #{piece_pos} to #{king_pos}: #{status}"
-        p "#{color} in check [#{piece_pos} to #{king_pos}]" if status == true
+       p "#{color} in check [#{piece_pos} to #{king_pos}]" if status == true
       end
     end
   end
@@ -163,16 +163,17 @@ class Board
     move_vector, move_range = make_move_vector(start_pos, target_pos)
 
     valid_direction = valid_direction_for?(piece, move_vector)
-    logger.info "valid_direction: #{valid_direction}"
+  #  p "valid_direction: #{valid_direction}"
 
     valid_range = valid_range_for?(piece, move_range)
     logger.info "piece range: #{piece.range} vs. move_range: #{move_range}"
-    logger.info "valid_range: #{valid_range}"
+   # p "valid_range: #{valid_range}"
 
     path = path_for(piece, start_pos, target_pos)
-    p "path for #{piece.face}: #{path}"
+    #p "path for #{piece.face}: #{path}"
 
     path_open = path_open_for?(piece, start_pos, target_pos)
+    #p "path_open? #{path_open}"
 
     if (valid_direction && valid_range && path_open)
       @chess_board[row_targ][col_targ] = @chess_board[row_start][col_start]
@@ -197,19 +198,52 @@ class Board
 
     unless piece.is_a? Knight
       #calc vector and its length/range
-      vector_move_col = (col_targ - col_start).to_f
-      vector_move_col = vector_move_col / (col_targ - col_start).to_f.abs unless (col_targ - col_start).zero?
-
-      vector_move_row = (row_targ - row_start).to_f
-      vector_move_row = vector_move_row / (row_targ - row_start).to_f.abs unless (row_targ - row_start).zero?
-
+      delta_col = col_targ - col_start
+      delta_row = row_targ - row_start
+      
+      if delta_col.abs == delta_row.abs # this works for diagoonal moves
+        if delta_col < 0
+          vector_move_col = -1
+        else # delta_col > 0
+          vector_move_col = 1
+        end
+      
+        if delta_row < 0
+          vector_move_row = -1
+        else # > 0
+          vector_move_row = 1
+        end
+        move_range = delta_col.abs
+     
+      elsif delta_col.zero?
+        vector_move_col = 0
+        if delta_row < 0
+          vector_move_row = -1
+        else # > 0
+          vector_move_row = 1
+        end
+        move_range = delta_row.abs
+      
+      elsif delta_row.zero?
+        vector_move_row = 0
+        if delta_col < 0
+          vector_move_col= -1
+        else #> 0
+          vector_move_col = 1
+        end
+        move_range = delta_col.abs
+      else
+        vector_move_col = (col_targ - col_start)
+        vector_move_row = (row_targ - row_start)
+      end
+    
       move_vector = [vector_move_row, vector_move_col]
-      move_range = Math.sqrt((row_targ - row_start) * (row_targ - row_start) + (col_targ - col_start) * (col_targ - col_start))
+      
     else # if piece is a knight
       vector_move_col = (col_targ - col_start)
       vector_move_row = (row_targ - row_start)
       move_vector = [vector_move_row, vector_move_col]
-      move_range = Math.sqrt((row_targ - row_start) * (row_targ - row_start) + (col_targ - col_start) * (col_targ - col_start))
+      move_range = 1
     end
     logger.info "vector_move_col: #{vector_move_col}, vector_move_row: #{vector_move_row}"
     logger.info "move_vector: #{move_vector}"
@@ -221,7 +255,7 @@ class Board
   # ask piece whether this vector is in its list
   def valid_direction_for?(piece, move_vector)
     logger.info "_____________________________________________________________"
-    logger.info "valid_direction_for?(#{piece.face}, #{move_vector})"
+   # p "valid_direction_for?(#{piece.face}, #{move_vector})"
 
     possible_vectors = piece.vectors
     logger.info "possible_vectors: #{possible_vectors}"
@@ -281,7 +315,7 @@ class Board
     path_open = true
     unless piece.is_a? Knight
       path = path_for(piece, start_pos, target_pos)
-      return false unless path.include?(target_pos)
+      #return false unless path.include?(target_pos)
       path_open = path.nil?
 
       path_open = path.all? do |(row, col)|

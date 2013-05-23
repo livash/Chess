@@ -1,4 +1,4 @@
-require_relative "conversion.rb"
+  require_relative "conversion.rb"
 #require_relative "board.rb"
 
 class Piece
@@ -64,7 +64,7 @@ class Knight < Piece
   def initialize(color)
     super(color)
     @face = "Kn"
-    @range = 4
+    @range = 1
   end
 
   def vectors
