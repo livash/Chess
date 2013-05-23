@@ -34,3 +34,12 @@ class Game
 	def save
 	end
 end
+
+if __FILE__ == $PROGRAM_NAME
+  
+  player1 = Player.new('Sean', 'w')
+  player2 = Player.new('Olena', 'b')
+  
+  game = Game.new(player1, player2)
+  game.players.each { |player| puts "#{player.name} #{player.color}" }
+end
