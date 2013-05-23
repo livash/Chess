@@ -79,6 +79,9 @@ class Board
   end
 
   def show_king_status(color)
+    logger.info "_____________________________________________________________"
+    logger.info "show_king_status(#{color})"
+
     # color = player.color
     king_like = King.new(color)
     king_pos = (positions_for_piece_like(king_like)).last
@@ -129,7 +132,8 @@ class Board
   end
 
   def place_move_for(color, start_pos, target_pos) # returns true or false
-    # logger = Logger.new('place_move_for.log')
+    logger.info "_____________________________________________________________"
+    logger.info "place_move_for(#{color}, #{start_pos}, #{target_pos})"
 
     logger.info "start_pos and target_pos exist: #{(start_pos && target_pos)}"
     return false unless (start_pos && target_pos)
@@ -140,16 +144,16 @@ class Board
     # p "available moves for: #{target_pos}"
     # p available_moves_for(target_pos)
 
-    x_start, y_start = str_to_coord(start_pos)
-    x_targ, y_targ = str_to_coord(target_pos)
+    col_start, row_start = str_to_coord(start_pos)
+    col_targ, row_targ = str_to_coord(target_pos)
 
-    logger.info "y_start: #{y_start}, x_start: #{x_start}"
-    logger.info "y_targ: #{y_targ}, x_targ: #{x_targ}"
+    logger.info "row_start: #{row_start}, col_start: #{col_start}"
+    logger.info "row_targ: #{row_targ}, col_targ: #{col_targ}"
 
-    piece = @chess_board[y_start][x_start]
+    piece = @chess_board[row_start][col_start]
     logger.info "piece: #{piece.face} #{piece.color}"
 
-    piece_targ = chess_board[y_targ][x_targ]
+    piece_targ = chess_board[row_targ][col_targ]
     logger.info "#{color} trying to take own piece? #{(piece.color == piece_targ.color)}"
     return false if piece.color == piece_targ.color
 
@@ -165,11 +169,14 @@ class Board
     logger.info "piece range: #{piece.range} vs. move_range: #{move_range}"
     logger.info "valid_range: #{valid_range}"
 
+    path = path_for(piece, start_pos, target_pos)
+    p "path for #{piece.face}: #{path}"
+
     path_open = path_open_for?(piece, start_pos, target_pos)
 
     if (valid_direction && valid_range && path_open)
-      @chess_board[y_targ][x_targ] = @chess_board[y_start][x_start]
-      @chess_board[y_start][x_start] = Blank.new
+      @chess_board[row_targ][col_targ] = @chess_board[row_start][col_start]
+      @chess_board[row_start][col_start] = Blank.new
       logger.info "Move was placed"
       true
     else
@@ -181,27 +188,30 @@ class Board
   private
 
   def make_move_vector(start_pos, target_pos)
-    x_start, y_start = str_to_coord(start_pos) #[coord_col, coord_row]
-    x_targ, y_targ = str_to_coord(target_pos)
-    piece = @chess_board[y_start][x_start]
+    logger.info "_____________________________________________________________"
+    logger.info "make_move_vector(#{start_pos}, #{target_pos})"
+
+    col_start, row_start = str_to_coord(start_pos) #[coord_col, coord_row]
+    col_targ, row_targ = str_to_coord(target_pos)
+    piece = @chess_board[row_start][col_start]
 
     unless piece.is_a? Knight
       #calc vector and its length/range
-      vector_move_x = (x_targ - x_start).to_f
-      vector_move_x = vector_move_x / (x_targ - x_start).to_f.abs unless (x_targ - x_start).zero?
+      vector_move_col = (col_targ - col_start).to_f
+      vector_move_col = vector_move_col / (col_targ - col_start).to_f.abs unless (col_targ - col_start).zero?
 
-      vector_move_y = (y_targ - y_start).to_f
-      vector_move_y = vector_move_y / (y_targ - y_start).to_f.abs unless (y_targ - y_start).zero?
+      vector_move_row = (row_targ - row_start).to_f
+      vector_move_row = vector_move_row / (row_targ - row_start).to_f.abs unless (row_targ - row_start).zero?
 
-      move_vector = [vector_move_y, vector_move_x]
-      move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+      move_vector = [vector_move_row, vector_move_col]
+      move_range = Math.sqrt((row_targ - row_start) * (row_targ - row_start) + (col_targ - col_start) * (col_targ - col_start))
     else # if piece is a knight
-      vector_move_x = (x_targ - x_start)
-      vector_move_y = (y_targ - y_start)
-      move_vector = [vector_move_y, vector_move_x]
-      move_range = Math.sqrt((y_targ - y_start) * (y_targ - y_start) + (x_targ - x_start) * (x_targ - x_start))
+      vector_move_col = (col_targ - col_start)
+      vector_move_row = (row_targ - row_start)
+      move_vector = [vector_move_row, vector_move_col]
+      move_range = Math.sqrt((row_targ - row_start) * (row_targ - row_start) + (col_targ - col_start) * (col_targ - col_start))
     end
-    logger.info "vector_move_x: #{vector_move_x}, vector_move_y: #{vector_move_y}"
+    logger.info "vector_move_col: #{vector_move_col}, vector_move_row: #{vector_move_row}"
     logger.info "move_vector: #{move_vector}"
     logger.info "move_range: #{move_range}"
 
@@ -210,6 +220,9 @@ class Board
 
   # ask piece whether this vector is in its list
   def valid_direction_for?(piece, move_vector)
+    logger.info "_____________________________________________________________"
+    logger.info "valid_direction_for?(#{piece.face}, #{move_vector})"
+
     possible_vectors = piece.vectors
     logger.info "possible_vectors: #{possible_vectors}"
 
@@ -225,23 +238,26 @@ class Board
   end
 
   def path_for(piece, start_pos, target_pos)
-    x_start, y_start = str_to_coord(start_pos)
-    x_targ, y_targ = str_to_coord(target_pos)
+    logger.info "_____________________________________________________________"
+    logger.info "path_for?(#{piece.face}, #{start_pos}, #{target_pos})"
+
+    col_start, row_start = str_to_coord(start_pos)
+    col_targ, row_targ = str_to_coord(target_pos)
 
     move_vector, move_range = make_move_vector(start_pos, target_pos)
 
-    vector_move_y, vector_move_x = move_vector
+    vector_move_row, vector_move_col = move_vector
     path = []
     path_strings = []
     (0...piece.range).each do |tile_index|
-      tile_coord_x = x_start + (vector_move_x * tile_index)
-      tile_coord_y = y_start + (vector_move_y * tile_index)
-      tile_coords = [tile_coord_y.to_i, tile_coord_x.to_i]
+      tile_coord_col = col_start + (vector_move_col * tile_index)
+      tile_coord_row = row_start + (vector_move_row * tile_index)
+      tile_coords = [tile_coord_row.to_i, tile_coord_col.to_i]
 
-      next unless in_bounds?(tile_coord_y, tile_coord_x)
+      next unless in_bounds?(tile_coord_row, tile_coord_col)
 
       path << tile_coords
-      break if tile_coords == [y_targ, x_targ]
+      break if tile_coords == [row_targ, col_targ]
 
       #convert to chess lingo
       tile_string = coord_to_str(tile_coords)
@@ -250,8 +266,7 @@ class Board
     logger.info "path before select: #{path}"
 
     path.select! do |(row,col)|
-      [row,col] != [y_start, x_start] &&
-      [row,col] != [y_targ, x_targ]
+      [row,col] != [row_start, col_start] #&& [row,col] != [row_targ, col_targ]
     end
 
     logger.info "path: #{path_strings} includes start and end tiles"
@@ -260,15 +275,19 @@ class Board
   end
 
   def path_open_for?(piece, start_pos, target_pos)
+    logger.info "_____________________________________________________________"
+    logger.info "path_open_for?(#{piece.face}, #{start_pos}, #{target_pos})"
 
     path_open = true
     unless piece.is_a? Knight
       path = path_for(piece, start_pos, target_pos)
+      return false unless path.include?(target_pos)
       path_open = path.nil?
 
       path_open = path.all? do |(row, col)|
         @chess_board[row][col].is_a? Blank # true
       end
+
       logger.info "path_open? #{path_open}"
     end
 
