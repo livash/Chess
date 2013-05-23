@@ -181,7 +181,7 @@ class Board
   private
 
   def make_move_vector(start_pos, target_pos)
-    x_start, y_start = str_to_coord(start_pos)
+    x_start, y_start = str_to_coord(start_pos) #[coord_col, coord_row]
     x_targ, y_targ = str_to_coord(target_pos)
     piece = @chess_board[y_start][x_start]
 
@@ -220,6 +220,10 @@ class Board
     move_range.to_i <= piece.range
   end
 
+  def in_bounds?(row, col)
+    (0...7).include?(row) && (0...7).include?(col)
+  end
+
   def path_for(piece, start_pos, target_pos)
     x_start, y_start = str_to_coord(start_pos)
     x_targ, y_targ = str_to_coord(target_pos)
@@ -229,13 +233,15 @@ class Board
     vector_move_y, vector_move_x = move_vector
     path = []
     path_strings = []
-    (piece.range - 1).times do |tile_index|
+    (0...piece.range).each do |tile_index|
       tile_coord_x = x_start + (vector_move_x * tile_index)
       tile_coord_y = y_start + (vector_move_y * tile_index)
       tile_coords = [tile_coord_y.to_i, tile_coord_x.to_i]
+
+      next unless in_bounds?(tile_coord_y, tile_coord_x)
+
       path << tile_coords
       break if tile_coords == [y_targ, x_targ]
-
 
       #convert to chess lingo
       tile_string = coord_to_str(tile_coords)
@@ -245,10 +251,9 @@ class Board
 
     path.select! do |(row,col)|
       [row,col] != [y_start, x_start] &&
-      [row,col] != [y_targ, x_targ] &&
-      (0...8).include?(row) &&
-      (0...8).include?(col)
+      [row,col] != [y_targ, x_targ]
     end
+
     logger.info "path: #{path_strings} includes start and end tiles"
     logger.info "path: #{path}"
     path

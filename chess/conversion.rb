@@ -16,3 +16,6 @@ module Conversion
     "#{col_string}#{row_string}"
   end
 end
+#
+# p "Sean's king"
+# p str_to_coord('e1')
