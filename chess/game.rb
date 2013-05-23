@@ -16,9 +16,9 @@ class Game
       move_placed = false
       until move_placed
         game_board.show_board
-        game_board.show_king_status(player)
+        game_board.show_king_status(player.color)
         start_pos, target_pos = player.ask_move #move_array = [f4, f3]
-        move_placed = game_board.place_move_for(player, start_pos, target_pos)
+        move_placed = game_board.place_move_for(player.color, start_pos, target_pos)
       end
       player = next_player(player)
 		end
