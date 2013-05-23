@@ -1,0 +1,1396 @@
+# Logfile created on 2013-05-22 16:30:39 -0700 by logger.rb/31641
+I, [2013-05-22T16:30:39.317173 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.317368 #38840]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:30:39.317418 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.317461 #38840]  INFO -- : piece: Ca w
+I, [2013-05-22T16:30:39.317506 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.317547 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.317818 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.317885 #38840]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:30:39.317926 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.317967 #38840]  INFO -- : piece: Kn w
+I, [2013-05-22T16:30:39.318009 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.318048 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.318275 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.318336 #38840]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:30:39.318376 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.318433 #38840]  INFO -- : piece: Bi w
+I, [2013-05-22T16:30:39.318476 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.318515 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.318721 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.318818 #38840]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:30:39.318859 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.318898 #38840]  INFO -- : piece: Qu w
+I, [2013-05-22T16:30:39.318938 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.318977 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.319210 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.319273 #38840]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:30:39.319312 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.319351 #38840]  INFO -- : piece: Ki w
+I, [2013-05-22T16:30:39.319390 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.319430 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.319665 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.319738 #38840]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:30:39.319784 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.319820 #38840]  INFO -- : piece: Bi w
+I, [2013-05-22T16:30:39.319855 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.319890 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.320087 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.320143 #38840]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:30:39.320196 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.320231 #38840]  INFO -- : piece: Kn w
+I, [2013-05-22T16:30:39.320271 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.320308 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.320533 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.320619 #38840]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:30:39.320670 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.320712 #38840]  INFO -- : piece: Ca w
+I, [2013-05-22T16:30:39.320751 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.320803 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.321000 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.321086 #38840]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:30:39.321122 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.321158 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.321192 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.321227 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.321482 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.321537 #38840]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:30:39.321572 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.321607 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.321642 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.321689 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.321871 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.321931 #38840]  INFO -- : y_start: 1, x_start: 2
+I, [2013-05-22T16:30:39.321968 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.322002 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.322038 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.322073 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.322916 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.322991 #38840]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:30:39.323028 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.323068 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.323106 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.323142 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.323333 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.323391 #38840]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:30:39.323448 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.323484 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.323519 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.323554 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.323754 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.323809 #38840]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:30:39.323844 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.323879 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.323914 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.323959 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.324140 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.324194 #38840]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:30:39.324238 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.324273 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.324308 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.324343 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:30:39.324539 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:30:39.324596 #38840]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:30:39.324631 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:30:39.324666 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:30:39.324705 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:30:39.324742 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:31:27.829609 #38840]  INFO -- : start_pos and target_pos exist: g3
+I, [2013-05-22T16:31:27.829764 #38840]  INFO -- : y_start: 6, x_start: 6
+I, [2013-05-22T16:31:27.829838 #38840]  INFO -- : y_targ: 5, x_targ: 6
+I, [2013-05-22T16:31:27.829979 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.830063 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:31:27.830146 #38840]  INFO -- : sean's piece? true
+I, [2013-05-22T16:31:27.830494 #38840]  INFO -- : valid_direction: true
+I, [2013-05-22T16:31:27.830634 #38840]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:31:27.830711 #38840]  INFO -- : valid_range: true
+I, [2013-05-22T16:31:27.831865 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.832005 #38840]  INFO -- : y_start: 5, x_start: 6
+I, [2013-05-22T16:31:27.832059 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.832116 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.832214 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.832266 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.832490 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.832558 #38840]  INFO -- : y_start: 6, x_start: 0
+I, [2013-05-22T16:31:27.832609 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.832661 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.832713 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.832766 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.832977 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.833062 #38840]  INFO -- : y_start: 6, x_start: 1
+I, [2013-05-22T16:31:27.833105 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.833157 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.833210 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.833261 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.833457 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.833513 #38840]  INFO -- : y_start: 6, x_start: 2
+I, [2013-05-22T16:31:27.833552 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.833595 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.833670 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.833709 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.833863 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.833947 #38840]  INFO -- : y_start: 6, x_start: 3
+I, [2013-05-22T16:31:27.833983 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.834027 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.834071 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.834119 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.834283 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.834338 #38840]  INFO -- : y_start: 6, x_start: 4
+I, [2013-05-22T16:31:27.834378 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.834426 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.834471 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.834514 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.834680 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.834740 #38840]  INFO -- : y_start: 6, x_start: 5
+I, [2013-05-22T16:31:27.834792 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.834836 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.834880 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.834923 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.835092 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.835148 #38840]  INFO -- : y_start: 6, x_start: 7
+I, [2013-05-22T16:31:27.835188 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.835231 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:31:27.835274 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.835317 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.835481 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.835535 #38840]  INFO -- : y_start: 7, x_start: 0
+I, [2013-05-22T16:31:27.835574 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.835619 #38840]  INFO -- : piece: Ca b
+I, [2013-05-22T16:31:27.835664 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.835727 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.835877 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.835952 #38840]  INFO -- : y_start: 7, x_start: 1
+I, [2013-05-22T16:31:27.835988 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.836032 #38840]  INFO -- : piece: Kn b
+I, [2013-05-22T16:31:27.836081 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.836139 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.836306 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.836369 #38840]  INFO -- : y_start: 7, x_start: 2
+I, [2013-05-22T16:31:27.836409 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.836449 #38840]  INFO -- : piece: Bi b
+I, [2013-05-22T16:31:27.836488 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.836526 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.836679 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.836730 #38840]  INFO -- : y_start: 7, x_start: 3
+I, [2013-05-22T16:31:27.836765 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.836805 #38840]  INFO -- : piece: Qu b
+I, [2013-05-22T16:31:27.836844 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.836899 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.837043 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.837121 #38840]  INFO -- : y_start: 7, x_start: 4
+I, [2013-05-22T16:31:27.837162 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.837202 #38840]  INFO -- : piece: Ki b
+I, [2013-05-22T16:31:27.837242 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.837283 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.837497 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.837560 #38840]  INFO -- : y_start: 7, x_start: 5
+I, [2013-05-22T16:31:27.837614 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.837657 #38840]  INFO -- : piece: Bi b
+I, [2013-05-22T16:31:27.837701 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.837751 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.837994 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.838061 #38840]  INFO -- : y_start: 7, x_start: 6
+I, [2013-05-22T16:31:27.838105 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.838156 #38840]  INFO -- : piece: Kn b
+I, [2013-05-22T16:31:27.838229 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.838273 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:31:27.838463 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:31:27.838544 #38840]  INFO -- : y_start: 7, x_start: 7
+I, [2013-05-22T16:31:27.838591 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:31:27.838640 #38840]  INFO -- : piece: Ca b
+I, [2013-05-22T16:31:27.838687 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:31:27.838733 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:08.068482 #38840]  INFO -- : start_pos and target_pos exist: c6
+I, [2013-05-22T16:32:08.068641 #38840]  INFO -- : y_start: 1, x_start: 2
+I, [2013-05-22T16:32:08.068711 #38840]  INFO -- : y_targ: 2, x_targ: 2
+I, [2013-05-22T16:32:08.068800 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.068883 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:08.068965 #38840]  INFO -- : olena's piece? true
+I, [2013-05-22T16:32:08.069281 #38840]  INFO -- : valid_direction: true
+I, [2013-05-22T16:32:08.069372 #38840]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:32:08.069451 #38840]  INFO -- : valid_range: true
+I, [2013-05-22T16:32:08.070675 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.070794 #38840]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:32:08.070848 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.070937 #38840]  INFO -- : piece: Ca w
+I, [2013-05-22T16:32:08.070988 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.071042 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.071266 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.071356 #38840]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:32:08.072055 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.072114 #38840]  INFO -- : piece: Kn w
+I, [2013-05-22T16:32:08.072169 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.072220 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.072429 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.072506 #38840]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:32:08.072556 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.072601 #38840]  INFO -- : piece: Bi w
+I, [2013-05-22T16:32:08.072645 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.072688 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.072855 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.072911 #38840]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:32:08.072951 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.073005 #38840]  INFO -- : piece: Qu w
+I, [2013-05-22T16:32:08.073050 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.073093 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.073256 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.073312 #38840]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:32:08.073351 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.073405 #38840]  INFO -- : piece: Ki w
+I, [2013-05-22T16:32:08.073449 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.073492 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.073650 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.073705 #38840]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:32:08.073745 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.073789 #38840]  INFO -- : piece: Bi w
+I, [2013-05-22T16:32:08.073832 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.073875 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.074048 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.074103 #38840]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:32:08.074142 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.074187 #38840]  INFO -- : piece: Kn w
+I, [2013-05-22T16:32:08.074243 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.074286 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.074444 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.074520 #38840]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:32:08.074556 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.074601 #38840]  INFO -- : piece: Ca w
+I, [2013-05-22T16:32:08.074644 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.074687 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.074844 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.074899 #38840]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:32:08.074937 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.074999 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.075044 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.075086 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.075234 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.075320 #38840]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:32:08.075357 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.075400 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.075444 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.075488 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.075655 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.075705 #38840]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:32:08.075740 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.075796 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.075838 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.075879 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.076016 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.076054 #38840]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:32:08.076094 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.076120 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.076144 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.076168 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.076284 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.076337 #38840]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:32:08.076378 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.076420 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.076462 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.076502 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.076703 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.076755 #38840]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:32:08.076794 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.076838 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.076882 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.076953 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.077156 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.077230 #38840]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:32:08.077277 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.077322 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.077370 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.077415 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:08.077641 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:08.077693 #38840]  INFO -- : y_start: 2, x_start: 2
+I, [2013-05-22T16:32:08.077737 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:08.077783 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:08.077834 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:08.077880 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:22.636045 #38840]  INFO -- : start_pos and target_pos exist: d3
+I, [2013-05-22T16:32:22.636201 #38840]  INFO -- : y_start: 6, x_start: 3
+I, [2013-05-22T16:32:22.636340 #38840]  INFO -- : y_targ: 5, x_targ: 3
+I, [2013-05-22T16:32:22.636428 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.636516 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:22.636599 #38840]  INFO -- : sean's piece? true
+I, [2013-05-22T16:32:22.636861 #38840]  INFO -- : valid_direction: true
+I, [2013-05-22T16:32:22.636953 #38840]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:32:22.637032 #38840]  INFO -- : valid_range: true
+I, [2013-05-22T16:32:22.638461 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.638613 #38840]  INFO -- : y_start: 5, x_start: 3
+I, [2013-05-22T16:32:22.638669 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.638727 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.638784 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.638837 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.639088 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.639159 #38840]  INFO -- : y_start: 5, x_start: 6
+I, [2013-05-22T16:32:22.639225 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.639279 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.639332 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.639383 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.639583 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.639677 #38840]  INFO -- : y_start: 6, x_start: 0
+I, [2013-05-22T16:32:22.639724 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.639777 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.639828 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.639879 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.640678 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.640752 #38840]  INFO -- : y_start: 6, x_start: 1
+I, [2013-05-22T16:32:22.640794 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.640854 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.640899 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.640943 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.641106 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.641162 #38840]  INFO -- : y_start: 6, x_start: 2
+I, [2013-05-22T16:32:22.641201 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.641245 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.641289 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.641331 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.641494 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.641550 #38840]  INFO -- : y_start: 6, x_start: 4
+I, [2013-05-22T16:32:22.641608 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.641652 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.641696 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.641739 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.641900 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.641956 #38840]  INFO -- : y_start: 6, x_start: 5
+I, [2013-05-22T16:32:22.641995 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.642038 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.642082 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.642125 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.642290 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.642346 #38840]  INFO -- : y_start: 6, x_start: 7
+I, [2013-05-22T16:32:22.642384 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.642428 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:32:22.642472 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.642515 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.642680 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.642747 #38840]  INFO -- : y_start: 7, x_start: 0
+I, [2013-05-22T16:32:22.642783 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.642828 #38840]  INFO -- : piece: Ca b
+I, [2013-05-22T16:32:22.642871 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.642915 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.643073 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.643128 #38840]  INFO -- : y_start: 7, x_start: 1
+I, [2013-05-22T16:32:22.643179 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.643222 #38840]  INFO -- : piece: Kn b
+I, [2013-05-22T16:32:22.643267 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.643309 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.643474 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.643529 #38840]  INFO -- : y_start: 7, x_start: 2
+I, [2013-05-22T16:32:22.643575 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.643626 #38840]  INFO -- : piece: Bi b
+I, [2013-05-22T16:32:22.643678 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.643715 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.643840 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.643878 #38840]  INFO -- : y_start: 7, x_start: 3
+I, [2013-05-22T16:32:22.643922 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.643956 #38840]  INFO -- : piece: Qu b
+I, [2013-05-22T16:32:22.643981 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.644005 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.644167 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.644230 #38840]  INFO -- : y_start: 7, x_start: 4
+I, [2013-05-22T16:32:22.644273 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.644313 #38840]  INFO -- : piece: Ki b
+I, [2013-05-22T16:32:22.644344 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.644386 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.644561 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.644613 #38840]  INFO -- : y_start: 7, x_start: 5
+I, [2013-05-22T16:32:22.644678 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.644724 #38840]  INFO -- : piece: Bi b
+I, [2013-05-22T16:32:22.644770 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.644816 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.645023 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.645121 #38840]  INFO -- : y_start: 7, x_start: 6
+I, [2013-05-22T16:32:22.645167 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.645211 #38840]  INFO -- : piece: Kn b
+I, [2013-05-22T16:32:22.645254 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.645298 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:22.645484 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:32:22.645537 #38840]  INFO -- : y_start: 7, x_start: 7
+I, [2013-05-22T16:32:22.645581 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:32:22.645625 #38840]  INFO -- : piece: Ca b
+I, [2013-05-22T16:32:22.645668 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:22.645734 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:32:33.523750 #38840]  INFO -- : start_pos and target_pos exist: a5
+I, [2013-05-22T16:32:33.523910 #38840]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:32:33.523988 #38840]  INFO -- : y_targ: 3, x_targ: 0
+I, [2013-05-22T16:32:33.524068 #38840]  INFO -- : piece: Qu w
+I, [2013-05-22T16:32:33.524151 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:32:33.524235 #38840]  INFO -- : olena's piece? true
+I, [2013-05-22T16:32:33.524538 #38840]  INFO -- : valid_direction: true
+I, [2013-05-22T16:32:33.524629 #38840]  INFO -- : piece range: 8 vs. move_range: 4.242640687119285
+I, [2013-05-22T16:32:33.524704 #38840]  INFO -- : valid_range: true
+I, [2013-05-22T16:32:33.526073 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.526225 #38840]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:32:33.526286 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.526345 #38840]  INFO -- : piece: Ca w
+I, [2013-05-22T16:32:33.526400 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.526485 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.526761 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.526860 #38840]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:32:33.526912 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.526963 #38840]  INFO -- : piece: Kn w
+I, [2013-05-22T16:32:33.527016 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.527066 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.527340 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.527414 #38840]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:32:33.527465 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.527516 #38840]  INFO -- : piece: Bi w
+I, [2013-05-22T16:32:33.527566 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.527645 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.527918 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.527993 #38840]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:32:33.528044 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.528094 #38840]  INFO -- : piece: Ki w
+I, [2013-05-22T16:32:33.528189 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.528233 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.528437 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.528520 #38840]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:32:33.528563 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.528606 #38840]  INFO -- : piece: Bi w
+I, [2013-05-22T16:32:33.528651 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.528694 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.528912 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.528976 #38840]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:32:33.529020 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.529063 #38840]  INFO -- : piece: Kn w
+I, [2013-05-22T16:32:33.529106 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.529166 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.529384 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.529450 #38840]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:32:33.529491 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.529560 #38840]  INFO -- : piece: Ca w
+I, [2013-05-22T16:32:33.529603 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.529645 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.529848 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.529934 #38840]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:32:33.529977 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.530021 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.530063 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.530106 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.530329 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.530391 #38840]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:32:33.530434 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.530478 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.531144 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.531205 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.531442 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.531509 #38840]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:32:33.531553 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.531601 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.531647 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.531693 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.531895 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.531949 #38840]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:32:33.531992 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.532037 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.532105 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.532151 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.532375 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.532429 #38840]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:32:33.532472 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.532517 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.532564 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.532609 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.532861 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.532914 #38840]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:32:33.532959 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.533006 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.533053 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.533127 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.533332 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.533385 #38840]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:32:33.533453 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.533501 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.533549 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.533630 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.533784 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.533828 #38840]  INFO -- : y_start: 2, x_start: 2
+I, [2013-05-22T16:32:33.533857 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.533904 #38840]  INFO -- : piece: Pa w
+I, [2013-05-22T16:32:33.533948 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.533993 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:32:33.534133 #38840]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:32:33.534173 #38840]  INFO -- : y_start: 3, x_start: 0
+I, [2013-05-22T16:32:33.534199 #38840]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:32:33.534228 #38840]  INFO -- : piece: Qu w
+I, [2013-05-22T16:32:33.534267 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:32:33.534303 #38840]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:13.247024 #38840]  INFO -- : start_pos and target_pos exist: h3
+I, [2013-05-22T16:35:13.247198 #38840]  INFO -- : y_start: 6, x_start: 7
+I, [2013-05-22T16:35:13.247263 #38840]  INFO -- : y_targ: 5, x_targ: 7
+I, [2013-05-22T16:35:13.247344 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.247426 #38840]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:13.247507 #38840]  INFO -- : sean's piece? true
+I, [2013-05-22T16:35:13.247812 #38840]  INFO -- : valid_direction: true
+I, [2013-05-22T16:35:13.247905 #38840]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:35:13.247983 #38840]  INFO -- : valid_range: true
+I, [2013-05-22T16:35:13.249499 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.249740 #38840]  INFO -- : y_start: 5, x_start: 3
+I, [2013-05-22T16:35:13.249800 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.249857 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.249917 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.249975 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.250306 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.250390 #38840]  INFO -- : y_start: 5, x_start: 6
+I, [2013-05-22T16:35:13.250451 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.250505 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.250562 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.250623 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.250910 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.250987 #38840]  INFO -- : y_start: 5, x_start: 7
+I, [2013-05-22T16:35:13.251045 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.251105 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.251195 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.251252 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.251524 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.251636 #38840]  INFO -- : y_start: 6, x_start: 0
+I, [2013-05-22T16:35:13.251683 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.251723 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.252452 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.252509 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.252761 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.252835 #38840]  INFO -- : y_start: 6, x_start: 1
+I, [2013-05-22T16:35:13.252887 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.252931 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.252972 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.253050 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.253276 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.253373 #38840]  INFO -- : y_start: 6, x_start: 2
+I, [2013-05-22T16:35:13.253424 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.253476 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.253529 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.253579 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.253822 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.253894 #38840]  INFO -- : y_start: 6, x_start: 4
+I, [2013-05-22T16:35:13.253946 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.253994 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.254039 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.254088 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.254342 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.254416 #38840]  INFO -- : y_start: 6, x_start: 5
+I, [2013-05-22T16:35:13.254464 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.254507 #38840]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:13.254592 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.254644 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.254839 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.254926 #38840]  INFO -- : y_start: 7, x_start: 0
+I, [2013-05-22T16:35:13.254969 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.255012 #38840]  INFO -- : piece: Ca b
+I, [2013-05-22T16:35:13.255054 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.255099 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.255318 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.255378 #38840]  INFO -- : y_start: 7, x_start: 1
+I, [2013-05-22T16:35:13.255421 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.255462 #38840]  INFO -- : piece: Kn b
+I, [2013-05-22T16:35:13.255503 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.255543 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.255766 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.255827 #38840]  INFO -- : y_start: 7, x_start: 2
+I, [2013-05-22T16:35:13.255872 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.255931 #38840]  INFO -- : piece: Bi b
+I, [2013-05-22T16:35:13.255976 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.256021 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.256238 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.256314 #38840]  INFO -- : y_start: 7, x_start: 3
+I, [2013-05-22T16:35:13.256361 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.256407 #38840]  INFO -- : piece: Qu b
+I, [2013-05-22T16:35:13.256456 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.256503 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.256723 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.256775 #38840]  INFO -- : y_start: 7, x_start: 4
+I, [2013-05-22T16:35:13.256821 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.256903 #38840]  INFO -- : piece: Ki b
+I, [2013-05-22T16:35:13.256950 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.257000 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.257157 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.257201 #38840]  INFO -- : y_start: 7, x_start: 5
+I, [2013-05-22T16:35:13.257731 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.257762 #38840]  INFO -- : piece: Bi b
+I, [2013-05-22T16:35:13.257787 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.257816 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.258012 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.258056 #38840]  INFO -- : y_start: 7, x_start: 6
+I, [2013-05-22T16:35:13.258082 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.258114 #38840]  INFO -- : piece: Kn b
+I, [2013-05-22T16:35:13.258153 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.258183 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:13.258339 #38840]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:13.258380 #38840]  INFO -- : y_start: 7, x_start: 7
+I, [2013-05-22T16:35:13.258431 #38840]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:13.258466 #38840]  INFO -- : piece: Ca b
+I, [2013-05-22T16:35:13.258500 #38840]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:13.258542 #38840]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:18.136641 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.137324 #38917]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:35:18.137383 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.137421 #38917]  INFO -- : piece: Ca w
+I, [2013-05-22T16:35:18.137459 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.137488 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.137699 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.137742 #38917]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:35:18.137769 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.137799 #38917]  INFO -- : piece: Kn w
+I, [2013-05-22T16:35:18.137844 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.137880 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.138015 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.138058 #38917]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:35:18.138098 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.138150 #38917]  INFO -- : piece: Bi w
+I, [2013-05-22T16:35:18.138196 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.138238 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.138425 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.138484 #38917]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:35:18.138511 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.138545 #38917]  INFO -- : piece: Qu w
+I, [2013-05-22T16:35:18.138627 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.138688 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.138937 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.139002 #38917]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:35:18.139049 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.139096 #38917]  INFO -- : piece: Ki w
+I, [2013-05-22T16:35:18.139142 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.139198 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.139436 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.139495 #38917]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:35:18.139539 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.139586 #38917]  INFO -- : piece: Bi w
+I, [2013-05-22T16:35:18.139631 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.139699 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.139931 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.140000 #38917]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:35:18.140045 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.140092 #38917]  INFO -- : piece: Kn w
+I, [2013-05-22T16:35:18.140139 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.140183 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.140416 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.140469 #38917]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:35:18.140514 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.140563 #38917]  INFO -- : piece: Ca w
+I, [2013-05-22T16:35:18.140608 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.140668 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.140882 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.140965 #38917]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:35:18.141010 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.141053 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.141097 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.141141 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.141406 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.141457 #38917]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:35:18.141498 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.141542 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.141599 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.141644 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.141870 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.141932 #38917]  INFO -- : y_start: 1, x_start: 2
+I, [2013-05-22T16:35:18.141974 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.142018 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.142064 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.142113 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.142798 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.142872 #38917]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:35:18.142921 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.142963 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.143006 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.143068 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.143286 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.143368 #38917]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:35:18.143413 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.143457 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.143501 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.143547 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.143791 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.143842 #38917]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:35:18.143882 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.143939 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.143984 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.144028 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.144247 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.144317 #38917]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:35:18.144361 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.144407 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.144456 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.144493 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:18.144721 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:18.144789 #38917]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:35:18.144829 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:18.144869 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:18.144909 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:18.144945 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:39.422507 #38917]  INFO -- : start_pos and target_pos exist: d3
+I, [2013-05-22T16:35:39.422712 #38917]  INFO -- : y_start: 6, x_start: 3
+I, [2013-05-22T16:35:39.422800 #38917]  INFO -- : y_targ: 5, x_targ: 3
+I, [2013-05-22T16:35:39.422884 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.422970 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:39.423052 #38917]  INFO -- : sean's piece? true
+I, [2013-05-22T16:35:39.423392 #38917]  INFO -- : valid_direction: true
+I, [2013-05-22T16:35:39.423521 #38917]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:35:39.423599 #38917]  INFO -- : valid_range: true
+I, [2013-05-22T16:35:39.424915 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.425061 #38917]  INFO -- : y_start: 5, x_start: 3
+I, [2013-05-22T16:35:39.425125 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.425181 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.425246 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.425295 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.425538 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.425610 #38917]  INFO -- : y_start: 6, x_start: 0
+I, [2013-05-22T16:35:39.425656 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.425708 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.425793 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.425844 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.426049 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.426115 #38917]  INFO -- : y_start: 6, x_start: 1
+I, [2013-05-22T16:35:39.426161 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.426212 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.426265 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.426350 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.426538 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.426603 #38917]  INFO -- : y_start: 6, x_start: 2
+I, [2013-05-22T16:35:39.426680 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.426732 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.426783 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.426835 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.427049 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.427119 #38917]  INFO -- : y_start: 6, x_start: 4
+I, [2013-05-22T16:35:39.427158 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.427207 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.427249 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.427292 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.427464 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.427523 #38917]  INFO -- : y_start: 6, x_start: 5
+I, [2013-05-22T16:35:39.427562 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.427605 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.427666 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.427709 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.427867 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.427935 #38917]  INFO -- : y_start: 6, x_start: 6
+I, [2013-05-22T16:35:39.427974 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.428017 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.428601 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.428648 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.428831 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.428888 #38917]  INFO -- : y_start: 6, x_start: 7
+I, [2013-05-22T16:35:39.428928 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.428971 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:39.429015 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.429072 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.429227 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.429282 #38917]  INFO -- : y_start: 7, x_start: 0
+I, [2013-05-22T16:35:39.429346 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.429391 #38917]  INFO -- : piece: Ca b
+I, [2013-05-22T16:35:39.429434 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.429478 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.429651 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.429705 #38917]  INFO -- : y_start: 7, x_start: 1
+I, [2013-05-22T16:35:39.429745 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.429789 #38917]  INFO -- : piece: Kn b
+I, [2013-05-22T16:35:39.429832 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.429875 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.430047 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.430110 #38917]  INFO -- : y_start: 7, x_start: 2
+I, [2013-05-22T16:35:39.430156 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.430196 #38917]  INFO -- : piece: Bi b
+I, [2013-05-22T16:35:39.430236 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.430290 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.430495 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.430588 #38917]  INFO -- : y_start: 7, x_start: 3
+I, [2013-05-22T16:35:39.430630 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.430671 #38917]  INFO -- : piece: Qu b
+I, [2013-05-22T16:35:39.430717 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.430759 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.430995 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.431068 #38917]  INFO -- : y_start: 7, x_start: 4
+I, [2013-05-22T16:35:39.431115 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.431160 #38917]  INFO -- : piece: Ki b
+I, [2013-05-22T16:35:39.431204 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.431248 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.431494 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.431553 #38917]  INFO -- : y_start: 7, x_start: 5
+I, [2013-05-22T16:35:39.431591 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.431638 #38917]  INFO -- : piece: Bi b
+I, [2013-05-22T16:35:39.431722 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.431771 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.432002 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.432098 #38917]  INFO -- : y_start: 7, x_start: 6
+I, [2013-05-22T16:35:39.432148 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.432195 #38917]  INFO -- : piece: Kn b
+I, [2013-05-22T16:35:39.432270 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.432335 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:39.432595 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:39.432657 #38917]  INFO -- : y_start: 7, x_start: 7
+I, [2013-05-22T16:35:39.432707 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:39.433276 #38917]  INFO -- : piece: Ca b
+I, [2013-05-22T16:35:39.433325 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:39.433402 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:45.094252 #38917]  INFO -- : start_pos and target_pos exist: c6
+I, [2013-05-22T16:35:45.094440 #38917]  INFO -- : y_start: 1, x_start: 2
+I, [2013-05-22T16:35:45.094525 #38917]  INFO -- : y_targ: 2, x_targ: 2
+I, [2013-05-22T16:35:45.094607 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.094751 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:45.094842 #38917]  INFO -- : olena's piece? true
+I, [2013-05-22T16:35:45.095098 #38917]  INFO -- : valid_direction: true
+I, [2013-05-22T16:35:45.095171 #38917]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:35:45.095218 #38917]  INFO -- : valid_range: true
+I, [2013-05-22T16:35:45.096346 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.096512 #38917]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:35:45.096557 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.096616 #38917]  INFO -- : piece: Ca w
+I, [2013-05-22T16:35:45.096676 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.096729 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.096990 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.097064 #38917]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:35:45.097110 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.097163 #38917]  INFO -- : piece: Kn w
+I, [2013-05-22T16:35:45.097216 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.097268 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.097480 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.097546 #38917]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:35:45.097592 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.097644 #38917]  INFO -- : piece: Bi w
+I, [2013-05-22T16:35:45.097720 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.097772 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.097955 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.098033 #38917]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:35:45.098080 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.098133 #38917]  INFO -- : piece: Qu w
+I, [2013-05-22T16:35:45.098185 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.098254 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.098437 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.098516 #38917]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:35:45.098563 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.098615 #38917]  INFO -- : piece: Ki w
+I, [2013-05-22T16:35:45.098667 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.098719 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.098900 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.098956 #38917]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:35:45.099010 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.099055 #38917]  INFO -- : piece: Bi w
+I, [2013-05-22T16:35:45.099099 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.099143 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.099308 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.099372 #38917]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:35:45.099409 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.099453 #38917]  INFO -- : piece: Kn w
+I, [2013-05-22T16:35:45.099512 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.099555 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.099721 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.099776 #38917]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:35:45.099840 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.099886 #38917]  INFO -- : piece: Ca w
+I, [2013-05-22T16:35:45.099930 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.099973 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.100163 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.100218 #38917]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:35:45.100257 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.100302 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.100346 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.100389 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.100580 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.100636 #38917]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:35:45.100676 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.100719 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.100763 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.100806 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.100985 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.101040 #38917]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:35:45.101096 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.101141 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.101185 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.101228 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.101403 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.101458 #38917]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:35:45.101498 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.101542 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.101591 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.101633 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.101810 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.101868 #38917]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:35:45.101903 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.101943 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.101998 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.102038 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.102233 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.102305 #38917]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:35:45.102331 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.102356 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.102381 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.102405 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.102536 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.102574 #38917]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:35:45.102599 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.102623 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.102647 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.102671 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:45.102816 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:45.102872 #38917]  INFO -- : y_start: 2, x_start: 2
+I, [2013-05-22T16:35:45.102916 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:45.102990 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:45.103035 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:45.103079 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:52.557999 #38917]  INFO -- : start_pos and target_pos exist: e3
+I, [2013-05-22T16:35:52.558154 #38917]  INFO -- : y_start: 6, x_start: 4
+I, [2013-05-22T16:35:52.558236 #38917]  INFO -- : y_targ: 5, x_targ: 4
+I, [2013-05-22T16:35:52.558356 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.558444 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:52.558529 #38917]  INFO -- : sean's piece? true
+I, [2013-05-22T16:35:52.558818 #38917]  INFO -- : valid_direction: true
+I, [2013-05-22T16:35:52.558911 #38917]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:35:52.558989 #38917]  INFO -- : valid_range: true
+I, [2013-05-22T16:35:52.560527 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.560775 #38917]  INFO -- : y_start: 5, x_start: 3
+I, [2013-05-22T16:35:52.560834 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.560891 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.560950 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.561007 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.561335 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.561413 #38917]  INFO -- : y_start: 5, x_start: 4
+I, [2013-05-22T16:35:52.561471 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.561534 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.561596 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.561655 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.561970 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.562058 #38917]  INFO -- : y_start: 6, x_start: 0
+I, [2013-05-22T16:35:52.562919 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.562976 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.563027 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.563068 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.563339 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.563406 #38917]  INFO -- : y_start: 6, x_start: 1
+I, [2013-05-22T16:35:52.563456 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.563506 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.563549 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.563592 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.563847 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.563912 #38917]  INFO -- : y_start: 6, x_start: 2
+I, [2013-05-22T16:35:52.563989 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.564034 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.564075 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.564123 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.564376 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.564443 #38917]  INFO -- : y_start: 6, x_start: 5
+I, [2013-05-22T16:35:52.564493 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.564540 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.564581 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.564627 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.564888 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.564954 #38917]  INFO -- : y_start: 6, x_start: 6
+I, [2013-05-22T16:35:52.565004 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.565077 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.565121 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.565171 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.565399 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.565493 #38917]  INFO -- : y_start: 6, x_start: 7
+I, [2013-05-22T16:35:52.565543 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.565586 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:35:52.565628 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.565693 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.565911 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.566020 #38917]  INFO -- : y_start: 7, x_start: 0
+I, [2013-05-22T16:35:52.566061 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.566105 #38917]  INFO -- : piece: Ca b
+I, [2013-05-22T16:35:52.566149 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.566191 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.566411 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.566472 #38917]  INFO -- : y_start: 7, x_start: 1
+I, [2013-05-22T16:35:52.566515 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.566580 #38917]  INFO -- : piece: Kn b
+I, [2013-05-22T16:35:52.566622 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.566662 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.566881 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.566943 #38917]  INFO -- : y_start: 7, x_start: 2
+I, [2013-05-22T16:35:52.566984 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.567026 #38917]  INFO -- : piece: Bi b
+I, [2013-05-22T16:35:52.567068 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.567128 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.567354 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.567434 #38917]  INFO -- : y_start: 7, x_start: 3
+I, [2013-05-22T16:35:52.567478 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.567524 #38917]  INFO -- : piece: Qu b
+I, [2013-05-22T16:35:52.567570 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.567617 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.567876 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.567932 #38917]  INFO -- : y_start: 7, x_start: 4
+I, [2013-05-22T16:35:52.567970 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.568015 #38917]  INFO -- : piece: Ki b
+I, [2013-05-22T16:35:52.568059 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.568103 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.568287 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.568329 #38917]  INFO -- : y_start: 7, x_start: 5
+I, [2013-05-22T16:35:52.568355 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.568384 #38917]  INFO -- : piece: Bi b
+I, [2013-05-22T16:35:52.568426 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.568463 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.568625 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.568665 #38917]  INFO -- : y_start: 7, x_start: 6
+I, [2013-05-22T16:35:52.568706 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.568767 #38917]  INFO -- : piece: Kn b
+I, [2013-05-22T16:35:52.568792 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.568834 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:52.568977 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:35:52.569017 #38917]  INFO -- : y_start: 7, x_start: 7
+I, [2013-05-22T16:35:52.569058 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:35:52.569102 #38917]  INFO -- : piece: Ca b
+I, [2013-05-22T16:35:52.569144 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:52.569182 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:35:58.829793 #38917]  INFO -- : start_pos and target_pos exist: a5
+I, [2013-05-22T16:35:58.830013 #38917]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:35:58.830102 #38917]  INFO -- : y_targ: 3, x_targ: 0
+I, [2013-05-22T16:35:58.830185 #38917]  INFO -- : piece: Qu w
+I, [2013-05-22T16:35:58.830271 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:35:58.830351 #38917]  INFO -- : olena's piece? true
+I, [2013-05-22T16:35:58.830650 #38917]  INFO -- : valid_direction: true
+I, [2013-05-22T16:35:58.830788 #38917]  INFO -- : piece range: 8 vs. move_range: 4.242640687119285
+I, [2013-05-22T16:35:58.830899 #38917]  INFO -- : valid_range: true
+I, [2013-05-22T16:35:58.832199 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.832345 #38917]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:35:58.832410 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.832468 #38917]  INFO -- : piece: Ca w
+I, [2013-05-22T16:35:58.832522 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.832575 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.832818 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.832887 #38917]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:35:58.832934 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.832986 #38917]  INFO -- : piece: Kn w
+I, [2013-05-22T16:35:58.833060 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.833111 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.833301 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.833384 #38917]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:35:58.833428 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.833490 #38917]  INFO -- : piece: Bi w
+I, [2013-05-22T16:35:58.833548 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.833616 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.833981 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.834087 #38917]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:35:58.834155 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.834226 #38917]  INFO -- : piece: Ki w
+I, [2013-05-22T16:35:58.834301 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.834364 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.834692 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.834776 #38917]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:35:58.834831 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.834917 #38917]  INFO -- : piece: Bi w
+I, [2013-05-22T16:35:58.834979 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.835037 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.835337 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.835419 #38917]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:35:58.835501 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.835560 #38917]  INFO -- : piece: Kn w
+I, [2013-05-22T16:35:58.835627 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.835683 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.835968 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.836035 #38917]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:35:58.836075 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.836119 #38917]  INFO -- : piece: Ca w
+I, [2013-05-22T16:35:58.836163 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.836225 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.836381 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.836457 #38917]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:35:58.836493 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.836537 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.836582 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.836626 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.837321 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.837395 #38917]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:35:58.837444 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.837496 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.837537 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.837604 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.837860 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.837946 #38917]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:35:58.837993 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.838037 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.838083 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.838128 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.838376 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.838442 #38917]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:35:58.838488 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.838533 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.838605 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.838652 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.838852 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.838948 #38917]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:35:58.838997 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.839043 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.839090 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.839137 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.839393 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.839452 #38917]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:35:58.839496 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.839544 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.839590 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.839673 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.839859 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.839909 #38917]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:35:58.839937 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.839991 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.840019 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.840047 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.840207 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.840248 #38917]  INFO -- : y_start: 2, x_start: 2
+I, [2013-05-22T16:35:58.840291 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.840352 #38917]  INFO -- : piece: Pa w
+I, [2013-05-22T16:35:58.840392 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.840430 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:35:58.840564 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:35:58.840605 #38917]  INFO -- : y_start: 3, x_start: 0
+I, [2013-05-22T16:35:58.840649 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:35:58.840693 #38917]  INFO -- : piece: Qu w
+I, [2013-05-22T16:35:58.840739 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:35:58.840783 #38917]  INFO -- : sean's piece? false
+I, [2013-05-22T16:37:52.922575 #38917]  INFO -- : start_pos and target_pos exist: h3
+I, [2013-05-22T16:37:52.922735 #38917]  INFO -- : y_start: 6, x_start: 7
+I, [2013-05-22T16:37:52.922814 #38917]  INFO -- : y_targ: 5, x_targ: 7
+I, [2013-05-22T16:37:52.922950 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.923036 #38917]  INFO -- : sean trying to take own piece? false
+I, [2013-05-22T16:37:52.923120 #38917]  INFO -- : sean's piece? true
+I, [2013-05-22T16:37:52.923399 #38917]  INFO -- : valid_direction: true
+I, [2013-05-22T16:37:52.923490 #38917]  INFO -- : piece range: 2 vs. move_range: 1.0
+I, [2013-05-22T16:37:52.923566 #38917]  INFO -- : valid_range: true
+I, [2013-05-22T16:37:52.924969 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.925121 #38917]  INFO -- : y_start: 5, x_start: 3
+I, [2013-05-22T16:37:52.925197 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.925333 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.925390 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.925442 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.925758 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.925837 #38917]  INFO -- : y_start: 5, x_start: 4
+I, [2013-05-22T16:37:52.925888 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.925939 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.925991 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.926042 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.926339 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.926413 #38917]  INFO -- : y_start: 5, x_start: 7
+I, [2013-05-22T16:37:52.926465 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.926516 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.926578 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.926656 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.926914 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.927018 #38917]  INFO -- : y_start: 6, x_start: 0
+I, [2013-05-22T16:37:52.927068 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.927120 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.927184 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.927227 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.927461 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.927525 #38917]  INFO -- : y_start: 6, x_start: 1
+I, [2013-05-22T16:37:52.927568 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.927611 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.927654 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.927723 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.927939 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.928002 #38917]  INFO -- : y_start: 6, x_start: 2
+I, [2013-05-22T16:37:52.928069 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.928111 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.928155 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.928197 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.928436 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.928499 #38917]  INFO -- : y_start: 6, x_start: 5
+I, [2013-05-22T16:37:52.928541 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.928583 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.928626 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.928668 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.928903 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.928965 #38917]  INFO -- : y_start: 6, x_start: 6
+I, [2013-05-22T16:37:52.929007 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.929050 #38917]  INFO -- : piece: Pa b
+I, [2013-05-22T16:37:52.929094 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.929165 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.929381 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.929466 #38917]  INFO -- : y_start: 7, x_start: 0
+I, [2013-05-22T16:37:52.929509 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.929552 #38917]  INFO -- : piece: Ca b
+I, [2013-05-22T16:37:52.929595 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.929638 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.929873 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.929936 #38917]  INFO -- : y_start: 7, x_start: 1
+I, [2013-05-22T16:37:52.929977 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.930020 #38917]  INFO -- : piece: Kn b
+I, [2013-05-22T16:37:52.930069 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.930098 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.930265 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.930303 #38917]  INFO -- : y_start: 7, x_start: 2
+I, [2013-05-22T16:37:52.930330 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.930354 #38917]  INFO -- : piece: Bi b
+I, [2013-05-22T16:37:52.930395 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.930420 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.930580 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.930641 #38917]  INFO -- : y_start: 7, x_start: 3
+I, [2013-05-22T16:37:52.930686 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.930728 #38917]  INFO -- : piece: Qu b
+I, [2013-05-22T16:37:52.930761 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.930803 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.930992 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.931043 #38917]  INFO -- : y_start: 7, x_start: 4
+I, [2013-05-22T16:37:52.931598 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.931646 #38917]  INFO -- : piece: Ki b
+I, [2013-05-22T16:37:52.931692 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.931737 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.931961 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.932025 #38917]  INFO -- : y_start: 7, x_start: 5
+I, [2013-05-22T16:37:52.932069 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.932114 #38917]  INFO -- : piece: Bi b
+I, [2013-05-22T16:37:52.932161 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.932206 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.932460 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.932516 #38917]  INFO -- : y_start: 7, x_start: 6
+I, [2013-05-22T16:37:52.932566 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.932610 #38917]  INFO -- : piece: Kn b
+I, [2013-05-22T16:37:52.932655 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.932701 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:37:52.932883 #38917]  INFO -- : start_pos and target_pos exist: e8
+I, [2013-05-22T16:37:52.932925 #38917]  INFO -- : y_start: 7, x_start: 7
+I, [2013-05-22T16:37:52.932952 #38917]  INFO -- : y_targ: 0, x_targ: 4
+I, [2013-05-22T16:37:52.932989 #38917]  INFO -- : piece: Ca b
+I, [2013-05-22T16:37:52.933035 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:37:52.933080 #38917]  INFO -- : olena's piece? false
+I, [2013-05-22T16:38:02.722283 #38917]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:38:02.722470 #38917]  INFO -- : y_start: 3, x_start: 0
+I, [2013-05-22T16:38:02.722557 #38917]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:38:02.722641 #38917]  INFO -- : piece: Qu w
+I, [2013-05-22T16:38:02.722729 #38917]  INFO -- : olena trying to take own piece? false
+I, [2013-05-22T16:38:02.722817 #38917]  INFO -- : olena's piece? true
+I, [2013-05-22T16:38:02.723183 #38917]  INFO -- : valid_direction: true
+I, [2013-05-22T16:38:02.723283 #38917]  INFO -- : piece range: 8 vs. move_range: 5.656854249492381
+I, [2013-05-22T16:38:02.723364 #38917]  INFO -- : valid_range: true
+I, [2013-05-22T16:45:46.070114 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.070834 #39118]  INFO -- : y_start: 0, x_start: 0
+I, [2013-05-22T16:45:46.070868 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.070904 #39118]  INFO -- : piece: Ca w
+I, [2013-05-22T16:45:46.070942 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.070970 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.071098 #39118]  INFO -- : valid_direction: false
+I, [2013-05-22T16:45:46.071170 #39118]  INFO -- : piece range: 8 vs. move_range: 8.06225774829855
+I, [2013-05-22T16:45:46.071247 #39118]  INFO -- : valid_range: true
+I, [2013-05-22T16:45:46.071812 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.071871 #39118]  INFO -- : y_start: 0, x_start: 1
+I, [2013-05-22T16:45:46.071930 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.071979 #39118]  INFO -- : piece: Kn w
+I, [2013-05-22T16:45:46.072029 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.072082 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.072224 #39118]  INFO -- : valid_direction: false
+I, [2013-05-22T16:45:46.072279 #39118]  INFO -- : piece range: 4 vs. move_range: 7.615773105863909
+I, [2013-05-22T16:45:46.072329 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.072583 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.072642 #39118]  INFO -- : y_start: 0, x_start: 2
+I, [2013-05-22T16:45:46.072689 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.072755 #39118]  INFO -- : piece: Bi w
+I, [2013-05-22T16:45:46.072802 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.072847 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.072978 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.073034 #39118]  INFO -- : piece range: 8 vs. move_range: 7.280109889280518
+I, [2013-05-22T16:45:46.073080 #39118]  INFO -- : valid_range: true
+I, [2013-05-22T16:45:46.073576 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.073628 #39118]  INFO -- : y_start: 0, x_start: 3
+I, [2013-05-22T16:45:46.073668 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.073714 #39118]  INFO -- : piece: Qu w
+I, [2013-05-22T16:45:46.073764 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.073811 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.073971 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.074024 #39118]  INFO -- : piece range: 8 vs. move_range: 7.0710678118654755
+I, [2013-05-22T16:45:46.074074 #39118]  INFO -- : valid_range: true
+I, [2013-05-22T16:45:46.074562 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.074614 #39118]  INFO -- : y_start: 0, x_start: 4
+I, [2013-05-22T16:45:46.074654 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.074720 #39118]  INFO -- : piece: Ki w
+I, [2013-05-22T16:45:46.074767 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.074817 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.074960 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.075019 #39118]  INFO -- : piece range: 1 vs. move_range: 7.0
+I, [2013-05-22T16:45:46.075089 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.075384 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.075436 #39118]  INFO -- : y_start: 0, x_start: 5
+I, [2013-05-22T16:45:46.075476 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.075520 #39118]  INFO -- : piece: Bi w
+I, [2013-05-22T16:45:46.075567 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.075610 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.075738 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.075788 #39118]  INFO -- : piece range: 8 vs. move_range: 7.0710678118654755
+I, [2013-05-22T16:45:46.075830 #39118]  INFO -- : valid_range: true
+I, [2013-05-22T16:45:46.076747 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.076832 #39118]  INFO -- : y_start: 0, x_start: 6
+I, [2013-05-22T16:45:46.076867 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.076910 #39118]  INFO -- : piece: Kn w
+I, [2013-05-22T16:45:46.076957 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.077001 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.077173 #39118]  INFO -- : valid_direction: false
+I, [2013-05-22T16:45:46.077227 #39118]  INFO -- : piece range: 4 vs. move_range: 7.280109889280518
+I, [2013-05-22T16:45:46.077295 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.077558 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.077612 #39118]  INFO -- : y_start: 0, x_start: 7
+I, [2013-05-22T16:45:46.077653 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.077699 #39118]  INFO -- : piece: Ca w
+I, [2013-05-22T16:45:46.077754 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.077799 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.077934 #39118]  INFO -- : valid_direction: false
+I, [2013-05-22T16:45:46.077987 #39118]  INFO -- : piece range: 8 vs. move_range: 7.615773105863909
+I, [2013-05-22T16:45:46.078029 #39118]  INFO -- : valid_range: true
+I, [2013-05-22T16:45:46.078508 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.078570 #39118]  INFO -- : y_start: 1, x_start: 0
+I, [2013-05-22T16:45:46.078612 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.078654 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.078695 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.078739 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.078893 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.078944 #39118]  INFO -- : piece range: 2 vs. move_range: 7.211102550927978
+I, [2013-05-22T16:45:46.078985 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.079304 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.079406 #39118]  INFO -- : y_start: 1, x_start: 1
+I, [2013-05-22T16:45:46.079445 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.079485 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.079524 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.079562 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.079680 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.079718 #39118]  INFO -- : piece range: 2 vs. move_range: 6.708203932499369
+I, [2013-05-22T16:45:46.079755 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.080004 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.080078 #39118]  INFO -- : y_start: 1, x_start: 2
+I, [2013-05-22T16:45:46.080110 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.080152 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.080191 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.080229 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.080327 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.080364 #39118]  INFO -- : piece range: 2 vs. move_range: 6.324555320336759
+I, [2013-05-22T16:45:46.080400 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.080644 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.080744 #39118]  INFO -- : y_start: 1, x_start: 3
+I, [2013-05-22T16:45:46.080781 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.080821 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.080861 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.080900 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.081007 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.081043 #39118]  INFO -- : piece range: 2 vs. move_range: 6.082762530298219
+I, [2013-05-22T16:45:46.081081 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.081322 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.081386 #39118]  INFO -- : y_start: 1, x_start: 4
+I, [2013-05-22T16:45:46.081433 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.081472 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.081513 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.081552 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.081643 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.081677 #39118]  INFO -- : piece range: 2 vs. move_range: 6.0
+I, [2013-05-22T16:45:46.081738 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.081982 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.082032 #39118]  INFO -- : y_start: 1, x_start: 5
+I, [2013-05-22T16:45:46.082068 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.082106 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.082146 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.082185 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.082293 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.082329 #39118]  INFO -- : piece range: 2 vs. move_range: 6.082762530298219
+I, [2013-05-22T16:45:46.082366 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.082597 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.082647 #39118]  INFO -- : y_start: 1, x_start: 6
+I, [2013-05-22T16:45:46.082682 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.082721 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.082777 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.082816 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.082911 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.082947 #39118]  INFO -- : piece range: 2 vs. move_range: 6.324555320336759
+I, [2013-05-22T16:45:46.082985 #39118]  INFO -- : valid_range: false
+I, [2013-05-22T16:45:46.083208 #39118]  INFO -- : start_pos and target_pos exist: e1
+I, [2013-05-22T16:45:46.083270 #39118]  INFO -- : y_start: 1, x_start: 7
+I, [2013-05-22T16:45:46.083306 #39118]  INFO -- : y_targ: 7, x_targ: 4
+I, [2013-05-22T16:45:46.083344 #39118]  INFO -- : piece: Pa w
+I, [2013-05-22T16:45:46.083385 #39118]  INFO -- : w trying to take own piece? false
+I, [2013-05-22T16:45:46.083424 #39118]  INFO -- : w's piece? true
+I, [2013-05-22T16:45:46.083518 #39118]  INFO -- : valid_direction: true
+I, [2013-05-22T16:45:46.083554 #39118]  INFO -- : piece range: 2 vs. move_range: 6.708203932499369
+I, [2013-05-22T16:45:46.083609 #39118]  INFO -- : valid_range: false
